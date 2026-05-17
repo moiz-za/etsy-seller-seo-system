@@ -1,0 +1,18 @@
+# GitHub Linguist configuration
+# --------------------------------------------------------------------
+# By default, Linguist treats Markdown as "prose" and excludes it from
+# the language bar on the repo home page. Without this override, this
+# repo shows as "100% Python" (because of one bootstrap.py script)
+# even though it's ~99% Markdown content.
+#
+# Forcing Markdown to be detectable makes the language bar accurate:
+# it'll show Markdown as the dominant language with a sliver of Python.
+
+*.md linguist-detectable=true
+*.md linguist-documentation=false
+
+# Treat state-templates as project content (not vendored libraries)
+state-templates/** linguist-vendored=false
+
+# Normalize line endings on checkout
+* text=auto
