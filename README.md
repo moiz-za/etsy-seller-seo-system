@@ -60,6 +60,56 @@ See [INSTALL.md](INSTALL.md) for detailed steps per tool.
 
 ---
 
+## Using this for free (no paid account)
+
+Most paid Etsy SEO tools lock everything behind a $9–$50/month subscription. This system is built so you don't have to pay anyone — not Anthropic, not OpenAI, not me. There's a free path that takes 5 minutes to set up and costs $0.
+
+### The free path
+
+1. Sign up free at [claude.ai](https://claude.ai), [chatgpt.com](https://chatgpt.com), or [gemini.google.com](https://gemini.google.com)
+2. Open [`portable/Etsy_Listing_System_Instructions.md`](portable/Etsy_Listing_System_Instructions.md) from this repo and copy the entire contents
+3. Start a new chat in your AI tool, paste the doc as your first message
+4. Reply with: *"OK, follow this system. Here's my listing: [paste your listing]"*
+
+The AI follows the instructions and produces an optimized listing. That's it.
+
+### What works on free tiers
+
+| Tool | Free tier works? | Notes |
+|---|---|---|
+| **Claude.ai (free)** | ✅ Yes | Daily message cap; web search enabled. Paste portable doc as first message. |
+| **ChatGPT (free)** | ✅ Yes | Has browsing on free tier. Same paste-first-message pattern. |
+| **Gemini (free)** | ✅ Yes | Web search available; handles long instructions well. |
+| **Perplexity (free)** | ⚠️ Partial | Basic search works but the URL-fetch dependency in keyword research is less reliable on free tier. |
+
+### What you keep on the free path
+
+- ✅ All SEO rules (title / tags / attributes / description)
+- ✅ Live Etsy autocomplete + competitor SERP research (if web browsing is enabled)
+- ✅ Trademark stoplist scan — protects your listing from takedown
+- ✅ Honest scope diagnosis — tells you when your problem isn't SEO
+- ✅ Per-intent description hooks, indexing spread check, Pinterest content, pre-publish checklist
+- ✅ All 10 operational playbooks
+
+### What you lose on the free path
+
+- ❌ Cross-session memory — re-paste your session-state snapshot at the start of every new chat (it's a 30-second copy-paste)
+- ❌ Automatic folder management — no local `~/etsy-listings/` database; everything lives in the chat thread
+- ⚠️ Daily message limits — free tiers cap how much you can do per day
+
+### When the paid path makes sense
+
+If you're optimizing 30+ listings or running multiple shops, the paid Claude path saves real time:
+
+- **Claude Code** (terminal) — needs Claude Pro/Max or API credits
+- **Cowork** (Claude desktop app) — needs Claude Pro/Max
+
+Copy the `skill/` folder to `~/.claude/skills/etsy-seller/` and the system handles everything automatically: silent folder creation, cross-session memory, no copy-paste between sessions.
+
+**The skill content is identical on both paths.** The paid path just removes the manual copy-paste friction. If you're optimizing 1–5 listings, the free path is more than enough.
+
+---
+
 ## How you use it (the simplest possible flow)
 
 **Rewriting an existing listing that isn't getting traffic:**
