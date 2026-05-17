@@ -6,6 +6,22 @@ Schema versions are bumped only when state file formats change in ways that requ
 
 ---
 
+## [2.0.1] — May 2026
+
+**Documentation polish + GitHub language stats fix.**
+
+### Added
+- README: new "Using this for free (no paid account)" section — explicit free-tier workflow with per-tool support matrix (claude.ai / chatgpt.com / gemini.google.com / Perplexity)
+- `.gitattributes` — forces GitHub Linguist to count Markdown files (fixes the "100% Python" language bar misrepresentation)
+
+### Why these matter
+- Most paid Etsy SEO tools cost $9–$50/month; the free-path documentation makes it clear users don't need a paid AI account
+- Repo language bar now accurately shows Markdown as the dominant language
+
+No schema changes. No skill behavior changes. Pure documentation + cosmetic fix.
+
+---
+
 ## [2.0.0] — May 2026
 
 **Major restructure. Single-namespace listing database, two-mode auto-detected workflow.**
