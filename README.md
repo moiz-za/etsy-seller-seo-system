@@ -127,7 +127,7 @@ That's the whole interaction. No mode selection. No "which shop?" prompts. No se
 ## What's in the box
 
 ```
-etsy-seller-system/
+etsy-seller-seo-system/
 ├── README.md                              ← you're here
 ├── INSTALL.md                             ← step-by-step setup per AI tool
 ├── CHANGELOG.md                           ← version history
