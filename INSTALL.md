@@ -168,7 +168,7 @@ When a new release of `etsy-seller-system` comes out:
 
 ## Sharing this with others
 
-The entire `etsy-seller-system/` folder is self-contained and freely shareable.
+The entire `etsy-seller-seo-system/` folder is self-contained and freely shareable.
 
 1. Zip the folder, or share the GitHub repo link
 2. Recipient follows this INSTALL.md for their AI tool
