@@ -17,12 +17,14 @@ This file is universal — it applies to ANY shop, ANY niche, ANY product type (
 
 ### Designed by a Seller
 Original designs created by the seller, whether sold as digital downloads or as physical handmade items.
-- Designs must be made and/or designed by the seller
-- AI-assisted creations are permitted IF the seller prompted and directed the output
-- **AI use must be disclosed in any listing that used AI** (in the listing description). Listings that don't use AI don't need the disclosure.
-- PLR (Private Label Rights) files: only listable if your specific license explicitly permits resale on Etsy — verify the license terms in writing before listing
-- Scanned vintage content as digital downloads: removed from explicit permission list in June 2025 — contact Etsy before listing
-- Production partners: required to be disclosed in the listing (see §5)
+- **Originality Requirement (August 11, 2026 Enforcement Update):** Items produced using computerized tools (Cricut, CNC, laser cutters, sublimation printers) must rely on the seller's own original creative design. Listing un-modified third-party templates, generic clipart, or pre-made cut files bought from others no longer qualifies under "Designed by a seller".
+- **AI-Assisted Creations:** Allowed IF the seller prompted, directed, and contributed to the output.
+- **Listing Configuration for AI Items:**
+  - Dropdown settings: Who made it ➔ *"I did"*, When ➔ *"Made to order"* (or 2020-2026), What it is ➔ *"Finished product / Digital file"*.
+  - **Description Disclosure:** Must include a concise, factual disclosure statement in the listing description (e.g., *"Created by the seller using AI generation tools and refined for vector cutting/printing"*).
+- **Process Audit Trail:** Sellers should keep an audit trail (original prompts, vector source files, sketches) to prove originality if flagged by automated Etsy moderation.
+- PLR (Private Label Rights) files: only listable if your specific license explicitly permits resale on Etsy — verify the license terms in writing before listing.
+- Production partners: required to be disclosed in the listing (see §5).
 
 ### Made by a Seller (Handmade Physical)
 Physical items made by the seller's own hand or with the seller's tools/equipment.
