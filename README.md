@@ -3,9 +3,10 @@
 > Honest, evidence-driven Etsy SEO optimization for AI tools. Paste a listing → get back an optimized one. No shop registration, no setup forms, no nonsense.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Version](https://img.shields.io/badge/version-2.0-blue.svg)]()
-[![Schema](https://img.shields.io/badge/schema-2.0-blue.svg)]()
-[![Policy](https://img.shields.io/badge/Etsy_policy-May_2026-green.svg)]()
+[![Version](https://img.shields.io/badge/version-2.0-blue.svg)](CHANGELOG.md)
+[![Schema](https://img.shields.io/badge/schema-2.0-blue.svg)](skill/references/data-model/SCHEMA.md)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](README.md#contributing)
+[![Policy](https://img.shields.io/badge/Etsy_policy-May_2026-green.svg)](skill/references/policies.md)
 
 ---
 
@@ -187,6 +188,17 @@ etsy-seller-seo-system/
 This is an SEO tool. It does SEO well. If your only problem is bad SEO, this can produce a meaningful traffic lift — typically 20–40% impression improvement on rewritten listings within 30 days.
 
 If your problem isn't SEO — weak photos, wrong price, no reviews, saturated niche — this tool will tell you that honestly and route you to what would actually work. That honesty matters more than another set of rewritten tags.
+
+---
+
+## 🤝 Companion Repository
+
+Designed to work alongside [`svg-design-intelligence-system`](https://github.com/moiz-za/svg-design-intelligence-system) — that repo handles market research, buyer psychology, IP risk screening, and prompt engineering to create original SVG digital products *before* publishing.
+
+* **ESVG-DIS System** ➔ creates the right *product*.
+* **Etsy Seller SEO System** ➔ creates the right *listing*.
+
+Neither depends on the other; use either independently or together.
 
 ---
 

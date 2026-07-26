@@ -22,9 +22,19 @@ from pathlib import Path
 
 
 def find_default_templates_dir(script_dir: Path) -> Path:
-    """The state-templates folder is at the package root, two levels above this script."""
-    # script_dir = .../skill/scripts/
-    # templates  = .../state-templates/etsy-listings/
+    """Locate state-templates, handling two different install layouts.
+
+    Git-clone layout:  repo/skill/scripts/bootstrap.py
+                       repo/state-templates/etsy-listings/   ← two levels up
+
+    .skill zip layout: ~/.claude/skills/<name>/scripts/bootstrap.py
+                       ~/.claude/skills/<name>/state-templates/etsy-listings/ ← one level up
+
+    Try one level up first (zip layout); fall back to two levels up (repo layout).
+    """
+    one_up = script_dir.parent / "state-templates" / "etsy-listings"
+    if one_up.exists():
+        return one_up
     return script_dir.parent.parent / "state-templates" / "etsy-listings"
 
 
@@ -61,8 +71,11 @@ def bootstrap(state_dir: Path, templates_dir: Path, verbose: bool = True) -> dic
     if verbose:
         print(f"[bootstrap] Created state dir: {state_dir}")
 
-    # Copy every entry from the template folder
+    # Copy every entry from the template folder, skipping OS/editor junk (.DS_Store, etc.)
+    SKIP_NAMES = {".DS_Store", "__pycache__", "Thumbs.db", ".gitkeep"}
     for entry in templates_dir.iterdir():
+        if entry.name in SKIP_NAMES or entry.name.startswith("."):
+            continue
         target = state_dir / entry.name
         if target.exists():
             continue

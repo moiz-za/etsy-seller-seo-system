@@ -1,0 +1,21 @@
+# OS artifacts
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# macOS zip artifacts
+__MACOSX/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Editor artifacts
+.vscode/
+.idea/
+*.swp
+*~
+
+# Internal build scripts
+package.sh
