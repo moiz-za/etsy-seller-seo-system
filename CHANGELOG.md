@@ -4,6 +4,17 @@ All notable changes to the Etsy Seller System.
 
 Schema versions are bumped only when state file formats change in ways that require migration.
 
+## [2.0.2] — July 2026
+
+**Policy updates, zip archive packaging fix, and dual-layout bootstrap resolution.**
+
+### Added & Fixed
+- **Policy Update (August 11, 2026 Enforcement):** Updated `skill/references/policies.md` §1 with Etsy's Creativity Standards rules for computerized/Cricut/laser tools (mandatory original design requirement) and exact AI creation disclosure dropdown settings (*"I did"*, *"Made to order"*, *"Finished product / Digital file"*).
+- **`etsy-seller.skill` Packaging Fix:** Rebuilt distribution archive to include missing `state-templates/` directory (`state-templates/etsy-listings/`), fixing first-run bootstrap template errors for `.skill` zip installs.
+- **`bootstrap.py` Path Fix:** Updated `find_default_templates_dir()` to support dual-layout path resolution (zip install layout vs. git clone layout) and added `.DS_Store` / dotfile filtering during template copying.
+- **Repository Maintenance:** Created `.gitignore` ignoring OS artifacts (`.DS_Store`), python caches (`__pycache__`), and internal build scripts.
+- **README Polish:** Added active status badges, PRs Welcome badge, and a **🤝 Companion Repository** section linking to `svg-design-intelligence-system`.
+
 ---
 
 ## [2.0.1] — May 2026
