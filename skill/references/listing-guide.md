@@ -16,25 +16,26 @@
 
 ## 1. Title Rules
 
-### Hard Limits
-- **Fewer than 15 words** — aim for 6–12 meaningful words
-- **Maximum 140 characters** — spaces count
-- **Primary keyword in first 40 characters** — critical for mobile display and Google preview
-- No trademarked names, brand names, celebrity names
-- No subjective adjectives: beautiful, perfect, stunning, amazing, incredible
-- No sales/shipping/price information — Etsy badges these automatically
-- No promotional language: "on sale", "free", "best seller"
+### Hard Limits & Prohibitions
+- **STRICT WORD COUNT GUARDRAIL: MUST be 6–12 words. ABSOLUTE MAXIMUM: 14 words.** Any title with 15 or more words is INVALID and MUST be rejected and rewritten immediately.
+- **Maximum 140 characters** — spaces count.
+- **Primary keyword in first 40 characters** — critical for mobile display and search algorithm indexing.
+- **PROHIBITED SUBJECTIVE WORDS STOPLIST (ZERO ALLOWED):** Do NOT use filler adjectives or subjective fluff: `cute`, `adorable`, `beautiful`, `perfect`, `stunning`, `amazing`, `incredible`, `pretty`, `awesome`, `gorgeous`, `lovely`, `sweet`, `unique`, `best`, `top`, `wonderful`, `charming`. Subjective fluff wastes character space, dilutes search relevance, and triggers Etsy promotional filters.
+- No trademarked names, brand names, or celebrity names.
+- No sales/shipping/price information — Etsy badges these automatically.
+- No promotional language: "on sale", "free", "best seller".
 
-### Formula
+### Mandatory Formula
 ```
 [Primary Keyword] [Style/Theme Descriptor] | [Format or Use-Case]
 ```
 
-### Title Verification (display in output)
+### Title Verification (MUST display in output)
 ```
 [First 40 chars: "Primary keyword appears here..."] ✅
-[Word count: X] ✅
-[Char count: X] ✅
+[Word count: X words (MUST be 6–12, MAX 14)] ✅
+[Char count: X / 140] ✅
+[Subjective words check: 0 subjective words used] ✅
 ```
 
 ### Title Examples by Product Type
@@ -66,6 +67,7 @@ Etsy's algorithm understands meaning and intent — not just keyword matching. W
 - **13 tags maximum** — use every slot
 - **Each tag ≤ 20 characters INCLUDING spaces** — tags over 20 are silently rejected with no error
 - Tags must be unique — no two identical tags
+- **Phrase Overlap Limit:** No exact 2+ word phrase may repeat across more than 2 tags (maximum 2 tags may share a 2-word phrase cluster).
 - Letters, numbers, spaces, hyphens, apostrophes only
 - No foreign language tags — Etsy auto-translates
 - Do not repeat exact phrases from categories or attributes
@@ -362,6 +364,8 @@ Do not duplicate exact category phrases as standalone tags — categories alread
 **Key rule for digital products:** Never show just the file — show what the buyer will MAKE with it.
 
 **Image alt text rule (NEW):** the hero image alt text is part of the indexing spread check. It must contain the primary keyword phrase, describe the image accurately, and read naturally. Example: `Funny cat mom SVG design displayed on a white t-shirt, perfect Cricut craft project for pet lovers.`
+
+**Pinterest Marketing Block Rule:** Pin title (≤100 chars), Board name (25–40 chars), Board description (150–300 chars), Pin description (220–232 chars, no hashtags). *Count and Adjust Instruction:* Write naturally first, then count characters and explicitly expand or trim to land within the 220–232 character target range before finalizing.
 
 ---
 
