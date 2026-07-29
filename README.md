@@ -6,7 +6,7 @@
 [![Version](https://img.shields.io/badge/version-2.0-blue.svg)](CHANGELOG.md)
 [![Schema](https://img.shields.io/badge/schema-2.0-blue.svg)](skill/references/data-model/SCHEMA.md)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](README.md#contributing)
-[![Policy](https://img.shields.io/badge/Etsy_policy-May_2026-green.svg)](skill/references/policies.md)
+[![Policy](https://img.shields.io/badge/Etsy_policy-August_2026-green.svg)](skill/references/policies.md)
 
 ---
 
@@ -23,12 +23,13 @@ An Etsy SEO assistant that runs inside Claude (or pasted into ChatGPT, Perplexit
 - ✅ Pulls **live Etsy autocomplete** for what buyers are actually typing right now
 - ✅ Scrapes the **top 10 competitor listings** for your keyword to learn what's winning
 - ✅ Assesses **competition difficulty** — tells you if your keyword is realistic or hopeless
-- ✅ Builds a **title** with your primary keyword in the first 40 characters (the part shown on mobile)
-- ✅ Verifies all 13 tags are **under Etsy's silent 20-character limit** (the #1 cause of "I published but nothing happened")
+- ✅ Builds a **title** using the mandatory formula `[Primary Keyword] [Style Descriptor] | [Format]` in the first 40 characters (mobile preview)
+- ✅ Enforces **strict title word limits (6–12 words, max 14)** and an explicit **Prohibited Subjective Words Stoplist** (`cute`, `beautiful`, etc.)
+- ✅ Verifies all 13 tags are **under Etsy's silent 20-character limit** with refined phrase overlap rules (max 2 tags share a 2-word phrase cluster)
 - ✅ Catches **trademarked words** before your listing gets taken down
-- ✅ Checks **Etsy's current policies** every session (policies change)
+- ✅ Checks **Etsy's current 2026 policies** every session with an **Automated Dual-Repo Policy Sync Engine (`scripts/sync_etsy_policy.py`)** to eliminate policy drift
 - ✅ Uses **NLP-aware natural-language writing** (no keyword chains — Etsy 2026 penalizes those)
-- ✅ Generates **Pinterest content** for compound external SEO
+- ✅ Generates **Pinterest marketing content** (with explicit 220–232 char count & adjust guidance) for compound external SEO
 - ✅ Remembers your listings **across sessions** (on Claude) so it doesn't suggest duplicate keywords
 
 ## What it explicitly will NOT do
