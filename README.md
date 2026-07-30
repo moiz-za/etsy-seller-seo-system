@@ -1,14 +1,10 @@
 # Etsy Seller System
 
-> Honest, evidence-driven Etsy SEO optimization for AI tools. Paste a listing → get back an optimized one. No shop registration, no setup forms, no nonsense.
->
-> 👤 **Created & Maintained by:** [Moiz Zoaib Ali](https://moiz.solutions) ([@moiz-za](https://github.com/moiz-za)) · **Tools Portal:** [tools.moiz.solutions](https://tools.moiz.solutions) · **Contact:** [contact@moiz.solutions](mailto:contact@moiz.solutions)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [![Version](https://img.shields.io/badge/version-2.1.0-blue.svg)](CHANGELOG.md) [![Schema](https://img.shields.io/badge/schema-2.1-blue.svg)](skill/references/data-model/SCHEMA.md) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](README.md#contributing) [![Policy](https://img.shields.io/badge/Etsy_policy-August_2026-green.svg)](skill/references/policies.md)
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Version](https://img.shields.io/badge/version-2.1.0-blue.svg)](CHANGELOG.md)
-[![Schema](https://img.shields.io/badge/schema-2.1-blue.svg)](skill/references/data-model/SCHEMA.md)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](README.md#contributing)
-[![Policy](https://img.shields.io/badge/Etsy_policy-August_2026-green.svg)](skill/references/policies.md)
+> Honest, evidence-driven Etsy SEO optimization for AI tools. Paste a listing → get back an optimized one. No shop registration, no setup forms, no nonsense.
+
+👤 **Created & Maintained by:** [Moiz Zoaib Ali](https://moiz.solutions) ([@moiz-za](https://github.com/moiz-za)) · **Tools Portal:** [tools.moiz.solutions](https://tools.moiz.solutions) · **Contact:** [contact@moiz.solutions](mailto:contact@moiz.solutions)
 
 ---
 
