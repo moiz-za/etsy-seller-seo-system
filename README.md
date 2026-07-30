@@ -3,8 +3,8 @@
 > Honest, evidence-driven Etsy SEO optimization for AI tools. Paste a listing → get back an optimized one. No shop registration, no setup forms, no nonsense.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Version](https://img.shields.io/badge/version-2.0-blue.svg)](CHANGELOG.md)
-[![Schema](https://img.shields.io/badge/schema-2.0-blue.svg)](skill/references/data-model/SCHEMA.md)
+[![Version](https://img.shields.io/badge/version-2.1.0-blue.svg)](CHANGELOG.md)
+[![Schema](https://img.shields.io/badge/schema-2.1-blue.svg)](skill/references/data-model/SCHEMA.md)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](README.md#contributing)
 [![Policy](https://img.shields.io/badge/Etsy_policy-August_2026-green.svg)](skill/references/policies.md)
 
@@ -20,12 +20,15 @@ An Etsy SEO assistant that runs inside Claude (or pasted into ChatGPT, Perplexit
 
 ## What it actually does (the short list)
 
+- ✅ Operates in **Caveman Output Mode** (crisp, high-density, bullet-first output style cutting token consumption by up to 70%)
+- ✅ Strictly enforces **The 5 Immutable System Laws** (`skill/references/playbooks/system-laws.md`) for zero-drift execution discipline
 - ✅ Pulls **live Etsy autocomplete** for what buyers are actually typing right now
 - ✅ Scrapes the **top 10 competitor listings** for your keyword to learn what's winning
 - ✅ Assesses **competition difficulty** — tells you if your keyword is realistic or hopeless
 - ✅ Builds a **title** using the mandatory formula `[Primary Keyword] [Style Descriptor] | [Format]` in the first 40 characters (mobile preview)
 - ✅ Enforces **strict title word limits (6–12 words, max 14)** and an explicit **Prohibited Subjective Words Stoplist** (`cute`, `beautiful`, etc.)
 - ✅ Verifies all 13 tags are **under Etsy's silent 20-character limit** with refined phrase overlap rules (max 2 tags share a 2-word phrase cluster)
+- ✅ Enforces **zero emojis in description text or section headers** for clean formatting and screen-reader accessibility
 - ✅ Catches **trademarked words** before your listing gets taken down
 - ✅ Checks **Etsy's current 2026 policies** every session with an **Automated Dual-Repo Policy Sync Engine (`scripts/sync_etsy_policy.py`)** to eliminate policy drift
 - ✅ Uses **NLP-aware natural-language writing** (no keyword chains — Etsy 2026 penalizes those)

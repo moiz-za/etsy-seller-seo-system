@@ -4,6 +4,23 @@ All notable changes to the Etsy Seller System.
 
 Schema versions are bumped only when state file formats change in ways that require migration.
 
+## [2.1.0] — July 2026
+
+**Major update introducing Caveman Output Mode and 5 Immutable System Laws across Full Skill and Portable editions.**
+
+### Added & Refined
+- **🦣 Caveman Output Mode (Token Efficiency):** Output responses are formatted in high-density, bullet-first, zero-fluff text ("Caveman Mode"), saving up to 70% of output tokens per turn while maintaining 100% of SERP research and keyword tracking in local markdown state (`~/etsy-listings/`).
+- **📜 5 Immutable System Laws (`skill/references/playbooks/system-laws.md`):** Non-bypassable execution laws:
+  1. *Law 1: Immutable Operational Integrity* — Sequential execution of Mode 1/2 workflows, difficulty assessment, and listing output phases without skipping.
+  2. *Law 2: Zero-Hallucination Evidence Traceability* — Live search data or explicit `[Data Source: Reasoning Engine Fallback]` tagging.
+  3. *Law 3: Mandatory 20-Character Tag Limit & Overlap Rules* — Exactly 13 tags, every tag ≤20 chars (including spaces), max 2 tags share phrase cluster, zero emojis/special symbols in tags.
+  4. *Law 4: Caveman Output Protocol* — Concise, high-density outputs by default; full raw SERP breakdowns unlocked on demand (`"expand"`, `"full report"`).
+  5. *Law 5: Strict Listing Format & No-Emoji Mandate* — Mandatory Title Formula (`[Primary Keyword] [Style Descriptor] | [Format]`), Title Word Count (6–12 words, max 14), Prohibited Subjective Words Stoplist (`cute`, `beautiful`, etc.), zero emojis in description text or section headers, Etsy 2026 AI Disclosure, Hero Alt Text, and Pinterest Marketing Block.
+- **🚫 Strict No-Emoji Description Rule:** Updated `skill/references/listing-guide.md` §4 banning emojis from description text or section headers.
+- **🔄 Dual-Repo Policy Sync:** Auto-synchronized rulebooks bidirectionally with `svg-design-intelligence-system`.
+
+---
+
 ## [2.0.2] — July 2026
 
 **Policy updates, zip archive packaging fix, and dual-layout bootstrap resolution.**

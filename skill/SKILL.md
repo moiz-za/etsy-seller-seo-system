@@ -6,7 +6,19 @@ description: >
 
 # Etsy Seller — SEO Optimization System
 
-**Schema version:** 2.0 · **Policy version:** May 2026
+**Schema version:** 2.1 · **Policy version:** August 2026 (Featuring System Laws & Caveman Output Protocol)
+
+---
+
+## 📜 THE 5 IMMUTABLE SYSTEM LAWS
+
+All phase executions MUST strictly enforce `references/playbooks/system-laws.md`:
+
+1. **Immutable Operational Integrity:** Execute Mode 1 (Rewrite) and Mode 2 (New Listing) workflows, difficulty assessments, SERP checks, and listing output phases sequentially without skipping.
+2. **Zero-Hallucination Evidence Traceability:** Autocomplete phrases and competitor stats MUST trace to live search data or explicitly tag `[Data Source: Reasoning Engine Fallback]`.
+3. **Mandatory 20-Character Tag Limit & Overlap Rules:** Exactly 13 tags, every tag ≤20 chars (including spaces), no exact 2-word phrase shared across >2 tags, zero emojis/special symbols in tags.
+4. **Caveman Output Protocol:** Crisp, bullet-first, token-efficient outputs by default; full raw SERP breakdowns unlocked on demand (`"expand"`, `"full report"`).
+5. **Strict Listing Format & No-Emoji Mandate:** Mandatory Title Formula (`[Primary Keyword] [Style Descriptor] | [Format]`), Title Word Count (6–12 words, max 14), Prohibited Subjective Words Stoplist (`cute`, `beautiful`, etc.), zero emojis in description text or section headers, Etsy 2026 AI Disclosure, Hero Alt Text, and Pinterest Marketing Block.
 
 ---
 
