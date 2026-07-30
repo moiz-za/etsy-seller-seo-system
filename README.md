@@ -1,6 +1,12 @@
-# Etsy Seller System
+# Etsy Seller System 🛍️⚡
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [![Version](https://img.shields.io/badge/version-2.1.0-blue.svg)](CHANGELOG.md) [![Schema](https://img.shields.io/badge/schema-2.1-blue.svg)](skill/references/data-model/SCHEMA.md) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](README.md#contributing) [![Policy](https://img.shields.io/badge/Etsy_policy-August_2026-green.svg)](skill/references/policies.md)
+<p align="left">
+  <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="License: MIT"></a>
+  <a href="CHANGELOG.md"><img src="https://img.shields.io/badge/version-2.1.0-blue.svg" alt="Version"></a>
+  <a href="skill/references/data-model/SCHEMA.md"><img src="https://img.shields.io/badge/schema-2.1-blue.svg" alt="Schema"></a>
+  <a href="README.md#contributing"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" alt="PRs Welcome"></a>
+  <a href="skill/references/policies.md"><img src="https://img.shields.io/badge/Etsy_policy-August_2026-green.svg" alt="Etsy Policy"></a>
+</p>
 
 > Honest, evidence-driven Etsy SEO optimization for AI tools. Paste a listing → get back an optimized one. No shop registration, no setup forms, no nonsense.
 
