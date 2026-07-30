@@ -313,6 +313,7 @@ Do NOT add this if the user did not mention AI use.
 | State delivery method clearly | Generic AI-template copy |
 | [SHOPNAME] in closing | Off-platform contact details |
 | Proofread before output | ALL CAPS sections |
+| Clean text formatting | Emojis in description text or headers |
 
 ---
 
