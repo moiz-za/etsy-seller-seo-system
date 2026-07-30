@@ -1,22 +1,16 @@
-# Etsy Seller System 🛍️⚡
+# Etsy Seller System
 
-<p align="left">
-  <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="License: MIT"></a>
-  <a href="CHANGELOG.md"><img src="https://img.shields.io/badge/version-2.1.0-blue.svg" alt="Version"></a>
-  <a href="skill/references/data-model/SCHEMA.md"><img src="https://img.shields.io/badge/schema-2.1-blue.svg" alt="Schema"></a>
-  <a href="README.md#contributing"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" alt="PRs Welcome"></a>
-  <a href="skill/references/policies.md"><img src="https://img.shields.io/badge/Etsy_policy-August_2026-green.svg" alt="Etsy Policy"></a>
-</p>
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)&nbsp;[![Version](https://img.shields.io/badge/version-2.1.0-blue.svg)](CHANGELOG.md)&nbsp;[![Schema](https://img.shields.io/badge/schema-2.1-blue.svg)](skill/references/data-model/SCHEMA.md)&nbsp;[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](README.md#contributing)&nbsp;[![Policy](https://img.shields.io/badge/Etsy_policy-August_2026-green.svg)](skill/references/policies.md)
 
 > Honest, evidence-driven Etsy SEO optimization for AI tools. Paste a listing → get back an optimized one. No shop registration, no setup forms, no nonsense.
 
-👤 **Created & Maintained by:** [Moiz Zoaib Ali](https://moiz.solutions) ([@moiz-za](https://github.com/moiz-za)) · **Tools Portal:** [tools.moiz.solutions](https://tools.moiz.solutions) · **Contact:** [contact@moiz.solutions](mailto:contact@moiz.solutions)
+ **Created & Maintained by:**[Moiz Zoaib Ali](https://moiz.solutions) ([@moiz-za](https://github.com/moiz-za)) · **Tools Portal:**[tools.moiz.solutions](https://tools.moiz.solutions) · **Contact:**[contact@moiz.solutions](mailto:contact@moiz.solutions)
 
 ---
 
 ## What this is
 
-An Etsy SEO assistant that runs inside Claude (or pasted into ChatGPT, Perplexity, Gemini). You give it your listing — either an existing one that isn't getting traffic, or a short description of a new product — and it gives you back an optimized version: title, tags, description, attributes, Pinterest content, all built from **live Etsy search data** (real autocomplete + real competitor SERP scraping).
+An Etsy SEO assistant that runs inside Claude (or pasted into ChatGPT, Perplexity, Gemini). You give it your listing — either an existing one that isn't getting traffic, or a short description of a new product — and it gives you back an optimized version: title, tags, description, attributes, Pinterest content, all built from **live Etsy search data**(real autocomplete + real competitor SERP scraping).
 
 **The honest version of what most "Etsy SEO tools" pretend to be.**
 
@@ -24,27 +18,27 @@ An Etsy SEO assistant that runs inside Claude (or pasted into ChatGPT, Perplexit
 
 ## What it actually does (the short list)
 
-- ✅ Operates in **Caveman Output Mode** (crisp, high-density, bullet-first output style cutting token consumption by up to 70%)
-- ✅ Strictly enforces **The 5 Immutable System Laws** (`skill/references/playbooks/system-laws.md`) for zero-drift execution discipline
-- ✅ Pulls **live Etsy autocomplete** for what buyers are actually typing right now
-- ✅ Scrapes the **top 10 competitor listings** for your keyword to learn what's winning
-- ✅ Assesses **competition difficulty** — tells you if your keyword is realistic or hopeless
-- ✅ Builds a **title** using the mandatory formula `[Primary Keyword] [Style Descriptor] | [Format]` in the first 40 characters (mobile preview)
-- ✅ Enforces **strict title word limits (6–12 words, max 14)** and an explicit **Prohibited Subjective Words Stoplist** (`cute`, `beautiful`, etc.)
-- ✅ Verifies all 13 tags are **under Etsy's silent 20-character limit** with refined phrase overlap rules (max 2 tags share a 2-word phrase cluster)
-- ✅ Enforces **zero emojis in description text or section headers** for clean formatting and screen-reader accessibility
-- ✅ Catches **trademarked words** before your listing gets taken down
-- ✅ Checks **Etsy's current 2026 policies** every session with an **Automated Dual-Repo Policy Sync Engine (`scripts/sync_etsy_policy.py`)** to eliminate policy drift
-- ✅ Uses **NLP-aware natural-language writing** (no keyword chains — Etsy 2026 penalizes those)
-- ✅ Generates **Pinterest marketing content** (with explicit 220–232 char count & adjust guidance) for compound external SEO
-- ✅ Remembers your listings **across sessions** (on Claude) so it doesn't suggest duplicate keywords
+- Operates in **Caveman Output Mode**(crisp, high-density, bullet-first output style cutting token consumption by up to 70%)
+- Strictly enforces **The 5 Immutable System Laws**(`skill/references/playbooks/system-laws.md`) for zero-drift execution discipline
+- Pulls **live Etsy autocomplete**for what buyers are actually typing right now
+- Scrapes the **top 10 competitor listings**for your keyword to learn what's winning
+- Assesses **competition difficulty**— tells you if your keyword is realistic or hopeless
+- Builds a **title**using the mandatory formula `[Primary Keyword] [Style Descriptor] | [Format]` in the first 40 characters (mobile preview)
+- Enforces **strict title word limits (6–12 words, max 14)**and an explicit **Prohibited Subjective Words Stoplist**(`cute`, `beautiful`, etc.)
+- Verifies all 13 tags are **under Etsy's silent 20-character limit**with refined phrase overlap rules (max 2 tags share a 2-word phrase cluster)
+- Enforces **zero emojis in description text or section headers**for clean formatting and screen-reader accessibility
+- Catches **trademarked words**before your listing gets taken down
+- Checks **Etsy's current 2026 policies**every session with an **Automated Dual-Repo Policy Sync Engine (`scripts/sync_etsy_policy.py`)**to eliminate policy drift
+- Uses **NLP-aware natural-language writing**(no keyword chains — Etsy 2026 penalizes those)
+- Generates **Pinterest marketing content**(with explicit 220–232 char count & adjust guidance) for compound external SEO
+- Remembers your listings **across sessions**(on Claude) so it doesn't suggest duplicate keywords
 
 ## What it explicitly will NOT do
 
-- ❌ Won't pretend an SEO rewrite will fix a hero-image problem
-- ❌ Won't claim a tag rewrite will save a listing with a 0.3% conversion rate
-- ❌ Won't promise you'll rank #1
-- ❌ Won't create images, videos, or mockups for you (writes briefs only)
+- Won't pretend an SEO rewrite will fix a hero-image problem
+- Won't claim a tag rewrite will save a listing with a 0.3% conversion rate
+- Won't promise you'll rank #1
+- Won't create images, videos, or mockups for you (writes briefs only)
 
 When your problem isn't SEO, **it says so**, then points you to concrete next steps with real data (competitor hero-image patterns, price ranges, free tools, etc.).
 
@@ -86,36 +80,36 @@ The AI follows the instructions and produces an optimized listing. That's it.
 
 | Tool | Free tier works? | Notes |
 |---|---|---|
-| **Claude.ai (free)** | ✅ Yes | Daily message cap; web search enabled. Paste portable doc as first message. |
-| **ChatGPT (free)** | ✅ Yes | Has browsing on free tier. Same paste-first-message pattern. |
-| **Gemini (free)** | ✅ Yes | Web search available; handles long instructions well. |
-| **Perplexity (free)** | ⚠️ Partial | Basic search works but the URL-fetch dependency in keyword research is less reliable on free tier. |
+| **Claude.ai (free)**| Yes | Daily message cap; web search enabled. Paste portable doc as first message. |
+| **ChatGPT (free)**| Yes | Has browsing on free tier. Same paste-first-message pattern. |
+| **Gemini (free)**| Yes | Web search available; handles long instructions well. |
+| **Perplexity (free)**| Partial | Basic search works but the URL-fetch dependency in keyword research is less reliable on free tier. |
 
 ### What you keep on the free path
 
-- ✅ All SEO rules (title / tags / attributes / description)
-- ✅ Live Etsy autocomplete + competitor SERP research (if web browsing is enabled)
-- ✅ Trademark stoplist scan — protects your listing from takedown
-- ✅ Honest scope diagnosis — tells you when your problem isn't SEO
-- ✅ Per-intent description hooks, indexing spread check, Pinterest content, pre-publish checklist
-- ✅ All 10 operational playbooks
+- All SEO rules (title / tags / attributes / description)
+- Live Etsy autocomplete + competitor SERP research (if web browsing is enabled)
+- Trademark stoplist scan — protects your listing from takedown
+- Honest scope diagnosis — tells you when your problem isn't SEO
+- Per-intent description hooks, indexing spread check, Pinterest content, pre-publish checklist
+- All 10 operational playbooks
 
 ### What you lose on the free path
 
-- ❌ Cross-session memory — re-paste your session-state snapshot at the start of every new chat (it's a 30-second copy-paste)
-- ❌ Automatic folder management — no local `~/etsy-listings/` database; everything lives in the chat thread
-- ⚠️ Daily message limits — free tiers cap how much you can do per day
+- Cross-session memory — re-paste your session-state snapshot at the start of every new chat (it's a 30-second copy-paste)
+- Automatic folder management — no local `~/etsy-listings/` database; everything lives in the chat thread
+- Daily message limits — free tiers cap how much you can do per day
 
 ### When the paid path makes sense
 
 If you're optimizing 30+ listings or running multiple shops, the paid Claude path saves real time:
 
-- **Claude Code** (terminal) — needs Claude Pro/Max or API credits
-- **Cowork** (Claude desktop app) — needs Claude Pro/Max
+- **Claude Code**(terminal) — needs Claude Pro/Max or API credits
+- **Cowork**(Claude desktop app) — needs Claude Pro/Max
 
 Copy the `skill/` folder to `~/.claude/skills/etsy-seller/` and the system handles everything automatically: silent folder creation, cross-session memory, no copy-paste between sessions.
 
-**The skill content is identical on both paths.** The paid path just removes the manual copy-paste friction. If you're optimizing 1–5 listings, the free path is more than enough.
+**The skill content is identical on both paths.**The paid path just removes the manual copy-paste friction. If you're optimizing 1–5 listings, the free path is more than enough.
 
 ---
 
@@ -137,43 +131,43 @@ That's the whole interaction. No mode selection. No "which shop?" prompts. No se
 
 ```
 etsy-seller-seo-system/
-├── README.md                              ← you're here
-├── INSTALL.md                             ← step-by-step setup per AI tool
-├── CHANGELOG.md                           ← version history
-├── LICENSE                                ← MIT
+├── README.md ← you're here
+├── INSTALL.md ← step-by-step setup per AI tool
+├── CHANGELOG.md ← version history
+├── LICENSE ← MIT
 │
-├── skill/                                 ← drop into ~/.claude/skills/etsy-seller/
-│   ├── SKILL.md                           ← the orchestrator (2 modes + auto-detect)
-│   ├── scripts/
-│   │   └── bootstrap.py                   ← silent state init on first run
-│   └── references/
-│       ├── data-model/SCHEMA.md           ← state file formats
-│       ├── listing-guide.md               ← title/tag/attribute/description rules
-│       ├── seo-guide.md                   ← 2026 Etsy algorithm details
-│       ├── policies.md                    ← Etsy policies (May 2026)
-│       ├── operations.md                  ← fees, Star Seller, cases, diagnostics
-│       ├── pinterest-guide.md             ← Pinterest strategy
-│       └── playbooks/                     ← 10 operational playbooks
+├── skill/ ← drop into ~/.claude/skills/etsy-seller/
+│ ├── SKILL.md ← the orchestrator (2 modes + auto-detect)
+│ ├── scripts/
+│ │ └── bootstrap.py ← silent state init on first run
+│ └── references/
+│ ├── data-model/SCHEMA.md ← state file formats
+│ ├── listing-guide.md ← title/tag/attribute/description rules
+│ ├── seo-guide.md ← 2026 Etsy algorithm details
+│ ├── policies.md ← Etsy policies (May 2026)
+│ ├── operations.md ← fees, Star Seller, cases, diagnostics
+│ ├── pinterest-guide.md ← Pinterest strategy
+│ └── playbooks/ ← 10 operational playbooks
 │
-├── portable/                              ← single self-contained doc for non-Claude tools
-│   └── Etsy_Listing_System_Instructions.md
+├── portable/ ← single self-contained doc for non-Claude tools
+│ └── Etsy_Listing_System_Instructions.md
 │
-└── state-templates/                       ← markdown templates auto-copied on first run
-    └── etsy-listings/
-        ├── keyword-map.md
-        ├── refresh-schedule.md
-        ├── listings/_TEMPLATE_listing.md
-        └── sqr-imports/README.md
+└── state-templates/ ← markdown templates auto-copied on first run
+ └── etsy-listings/
+ ├── keyword-map.md
+ ├── refresh-schedule.md
+ ├── listings/_TEMPLATE_listing.md
+ └── sqr-imports/README.md
 ```
 
 ---
 
 ## Who this is for
 
-- **Etsy sellers** whose listings aren't getting impressions and want to know why
-- **Anyone launching new listings** who wants them optimized from day one
-- **SEO consultants** managing listings for multiple clients (multi-shop = multi-thread in your AI tool)
-- **Sellers running multiple shops** who want one tool that handles all of them
+- **Etsy sellers**whose listings aren't getting impressions and want to know why
+- **Anyone launching new listings**who wants them optimized from day one
+- **SEO consultants**managing listings for multiple clients (multi-shop = multi-thread in your AI tool)
+- **Sellers running multiple shops**who want one tool that handles all of them
 
 ---
 
@@ -199,12 +193,12 @@ If your problem isn't SEO — weak photos, wrong price, no reviews, saturated ni
 
 ---
 
-## 🤝 Companion Repository
+## Companion Repository
 
 Designed to work alongside [`svg-design-intelligence-system`](https://github.com/moiz-za/svg-design-intelligence-system) — that repo handles market research, buyer psychology, IP risk screening, and prompt engineering to create original SVG digital products *before* publishing.
 
-* **ESVG-DIS System** ➔ creates the right *product*.
-* **Etsy Seller SEO System** ➔ creates the right *listing*.
+* **ESVG-DIS System**creates the right *product*.
+* **Etsy Seller SEO System**creates the right *listing*.
 
 Neither depends on the other; use either independently or together.
 
@@ -228,13 +222,13 @@ See [CHANGELOG.md](CHANGELOG.md) for what's changed across versions.
 
 ---
 
-## 👤 Author & Maintainer
+## Author & Maintainer
 
 Engineered and maintained by **Moiz Zoaib Ali**:
-* 🌐 **Personal Website:** [moiz.solutions](https://moiz.solutions)
-* 🛠️ **AI Tools Directory:** [tools.moiz.solutions](https://tools.moiz.solutions)
-* 💻 **GitHub Profile:** [@moiz-za](https://github.com/moiz-za)
-* 📧 **Contact Email:** [contact@moiz.solutions](mailto:contact@moiz.solutions)
+* **Personal Website:**[moiz.solutions](https://moiz.solutions)
+* **AI Tools Directory:**[tools.moiz.solutions](https://tools.moiz.solutions)
+* **GitHub Profile:**[@moiz-za](https://github.com/moiz-za)
+* **Contact Email:**[contact@moiz.solutions](mailto:contact@moiz.solutions)
 
 ---
 
