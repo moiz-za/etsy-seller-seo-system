@@ -1,6 +1,8 @@
 # Etsy Seller System
 
 > Honest, evidence-driven Etsy SEO optimization for AI tools. Paste a listing → get back an optimized one. No shop registration, no setup forms, no nonsense.
+>
+> 👤 **Created & Maintained by:** [Moiz Zoaib Ali](https://moiz.solutions) ([@moiz-za](https://github.com/moiz-za)) · **Tools Portal:** [tools.moiz.solutions](https://tools.moiz.solutions) · **Contact:** [contact@moiz.solutions](mailto:contact@moiz.solutions)
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Version](https://img.shields.io/badge/version-2.1.0-blue.svg)](CHANGELOG.md)
@@ -224,9 +226,19 @@ See [CHANGELOG.md](CHANGELOG.md) for what's changed across versions.
 
 ---
 
+## 👤 Author & Maintainer
+
+Engineered and maintained by **Moiz Zoaib Ali**:
+* 🌐 **Personal Website:** [moiz.solutions](https://moiz.solutions)
+* 🛠️ **AI Tools Directory:** [tools.moiz.solutions](https://tools.moiz.solutions)
+* 💻 **GitHub Profile:** [@moiz-za](https://github.com/moiz-za)
+* 📧 **Contact Email:** [contact@moiz.solutions](mailto:contact@moiz.solutions)
+
+---
+
 ## License
 
-MIT — use freely, modify, share. No warranty. Not affiliated with Etsy.
+MIT — Copyright (c) 2026 Moiz Zoaib Ali. Use freely, modify, share. No warranty. Not affiliated with Etsy.
 
 ---
 

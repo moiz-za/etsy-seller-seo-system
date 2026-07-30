@@ -1,6 +1,7 @@
 # Etsy Listing System — Portable Instructions (v2.1.0)
 
 **Version:** 2.1.0 · August 2026 · **Use with:** ChatGPT, Perplexity, Gemini, Claude (any AI tool with web search)
+**Created & Maintained by:** Moiz Zoaib Ali ([@moiz-za](https://github.com/moiz-za)) · **Website:** https://moiz.solutions · **Tools Portal:** https://tools.moiz.solutions
 
 This document is the complete portable system. Paste as a system prompt, attach as a knowledge file, or use as context. The AI follows these instructions for every Etsy listing operation.
 
