@@ -228,7 +228,6 @@ Engineered and maintained by **Moiz Zoaib Ali**:
 * **Personal Website:**[moiz.solutions](https://moiz.solutions)
 * **AI Tools Directory:**[tools.moiz.solutions](https://tools.moiz.solutions)
 * **GitHub Profile:**[@moiz-za](https://github.com/moiz-za)
-* **Contact Email:**[contact@moiz.solutions](mailto:contact@moiz.solutions)
 
 ---
 
