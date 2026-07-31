@@ -4,7 +4,7 @@
 
 > Honest, evidence-driven Etsy SEO optimization for AI tools. Paste a listing → get back an optimized one. No shop registration, no setup forms, no nonsense.
 
- **Created & Maintained by:**[Moiz Zoaib Ali](https://moiz.solutions) ([@moiz-za](https://github.com/moiz-za)) · **Tools Portal:**[tools.moiz.solutions](https://tools.moiz.solutions) · **Contact:**[contact@moiz.solutions](mailto:contact@moiz.solutions)
+ **Created & Maintained by:**[Moiz Zoaib Ali](https://moiz.solutions) ([@moiz-za](https://github.com/moiz-za)) · **Tools Portal:**[tools.moiz.solutions](https://tools.moiz.solutions)
 
 ---
 
@@ -228,7 +228,6 @@ Engineered and maintained by **Moiz Zoaib Ali**:
 * **Personal Website:**[moiz.solutions](https://moiz.solutions)
 * **AI Tools Directory:**[tools.moiz.solutions](https://tools.moiz.solutions)
 * **GitHub Profile:**[@moiz-za](https://github.com/moiz-za)
-* **Contact Email:**[contact@moiz.solutions](mailto:contact@moiz.solutions)
 
 ---
 

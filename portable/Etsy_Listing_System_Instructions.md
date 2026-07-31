@@ -200,22 +200,22 @@ Output §19 session state block at end of run.
 LISTING [REWRITE / CREATE] — L###
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-PRIMARY KEYWORD: [keyword]  ·  difficulty: [Low-Medium / Medium]  ·  ~[N] results
+PRIMARY KEYWORD: [keyword] · difficulty: [Low-Medium / Medium] · ~[N] results
 
 TITLE:
 [new title text]
 📱 Mobile preview: ┌──────────────────────────────────────┐
-                  │ [first 40 chars]...                  │
-                  └──────────────────────────────────────┘
-Word count: [X] ✅  ·  Char count: [X] / 140 ✅
+         │ [first 40 chars]...         │
+         └──────────────────────────────────────┘
+Word count: [X] ✅ · Char count: [X] / 140 ✅
 
 TAGS (13/13):
-1.  [tag] ([X] chars ✅)
-2.  [tag] ([X] chars ✅)
+1. [tag] ([X] chars ✅)
+2. [tag] ([X] chars ✅)
 ... (all 13)
 
 ATTRIBUTES:
-Style: [value]    Occasion: [value]    Recipient: [value]    File Type: [extracted]
+Style: [value]  Occasion: [value]  Recipient: [value]  File Type: [extracted]
 
 DESCRIPTION:
 [Meta zone — first 160 chars: "..."] ✅
@@ -223,7 +223,7 @@ DESCRIPTION:
 [Full 8-block description]
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-INDEXING SPREAD ✅  ·  KEYWORD REUSE ✅
+INDEXING SPREAD ✅ · KEYWORD REUSE ✅
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 RATIONALE (2-line summary):
@@ -252,10 +252,10 @@ Want more detail? Reply "show full" for evidence log, health score, Pinterest bl
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 WHAT CHANGED FROM YOUR ORIGINAL
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-Title:        [old → new + brief reason]
-Tags:         [X tags were over 20 chars (silently rejected); all 13 now ≤20 chars]
-Description:  [diagnose specific issue → fix]
-Attributes:   [N missing → all filled, N echo primary cluster]
+Title:    [old → new + brief reason]
+Tags:     [X tags were over 20 chars (silently rejected); all 13 now ≤20 chars]
+Description: [diagnose specific issue → fix]
+Attributes:  [N missing → all filled, N echo primary cluster]
 ```
 
 ### "Show full" adds these blocks
@@ -264,21 +264,21 @@ Attributes:   [N missing → all filled, N echo primary cluster]
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 RESEARCH EVIDENCE LOG
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-Autocomplete seeds run:     [list]
-SERPs fetched:              [list]
-Top-10 common phrases:      [phrase] (×N of 10)
-Difficulty signal:          [results count] | [ad density]
-Search intent detected:     [Browse / Specific hunt / Gifting / Trend]
+Autocomplete seeds run:   [list]
+SERPs fetched:       [list]
+Top-10 common phrases:   [phrase] (×N of 10)
+Difficulty signal:     [results count] | [ad density]
+Search intent detected:   [Browse / Specific hunt / Gifting / Trend]
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 HEALTH SCORE — [XX] / 100
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-SEO surface coverage:  X/25
-Evidence quality:      X/20
-Coherence:             X/15
-CTR estimate:          X/15 [* inferred if no SQR]
-Conversion estimate:   X/15 [* inferred]
-Compliance:            X/10
+SEO surface coverage: X/25
+Evidence quality:   X/20
+Coherence:       X/15
+CTR estimate:     X/15 [* inferred if no SQR]
+Conversion estimate:  X/15 [* inferred]
+Compliance:      X/10
 Suggested next action: [top recommendation]
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
@@ -481,7 +481,7 @@ DIAGNOSIS: CTR PROBLEM (not SEO)
 
 What's broken:
 1. HERO IMAGE — top 3 competitor patterns: [observed styles from Phase 3B]
-   Free tools: Canva, Placeit, Photopea
+  Free tools: Canva, Placeit, Photopea
 2. TITLE CLARITY — first 40 chars don't clearly say what product is + key feature
 3. PRICE — your $X.XX vs SERP median $Y.YY (test 15-25% lower)
 4. STAR SELLER badge if competitors have it
@@ -538,9 +538,9 @@ Output:
 
 YOUR KEYWORD: "[primary]"
 SERP TOPLINE: ~[X] competing listings. Top 3:
-  • #1: Star Seller, [N] reviews, ~[Y] sales, ~[Z] months old
-  • #2: ...
-  • #3: ...
+ • #1: Star Seller, [N] reviews, ~[Y] sales, ~[Z] months old
+ • #2: ...
+ • #3: ...
 
 REALISTIC CEILING FOR A NEW LISTING HERE:
 - Position 50–100 within 30 days
@@ -551,10 +551,10 @@ THREE PATHS:
 [1] Differentiate aggressively — re-frame with tighter buyer segment
 [2] Commit to 12-month compounding strategy (10+ listings + reviews + Pinterest)
 [3] Consider different platform:
-    - Pinterest + Shopify (visual products, you control funnel)
-    - Faire (B2B/wholesale)
-    - Amazon Handmade (utility-search products)
-    - Your own website + social (highest control, highest effort)
+  - Pinterest + Shopify (visual products, you control funnel)
+  - Faire (B2B/wholesale)
+  - Amazon Handmade (utility-search products)
+  - Your own website + social (highest control, highest effort)
 
 WHAT WOULD YOU LIKE TO DO?
 [a] Proceed anyway — I'll build the best possible Etsy listing
@@ -673,11 +673,11 @@ KEYWORD SYNC: Etsy primary → Pinterest primary, shared cluster
 ### The CTR-SEO Loop (CRITICAL)
 
 ```
-Strong SEO  →  impressions  →  hero mockup CTR  →  quality score  →  more impressions
-                                                    ↓ if CTR weak
-                                                    ↓ score falls
-                                                    ↓ listing demoted
-                                                    ↓ impressions collapse
+Strong SEO → impressions → hero mockup CTR → quality score → more impressions
+                          ↓ if CTR weak
+                          ↓ score falls
+                          ↓ listing demoted
+                          ↓ impressions collapse
 ```
 
 Implications:
