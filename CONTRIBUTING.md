@@ -68,6 +68,32 @@ python3 scripts/sync_etsy_policy.py --build   # rebuilds etsy-seller.skill
 Commit the rebuilt `etsy-seller.skill` alongside your change — the **Archive
 Check** CI job fails if the committed archive differs from the source tree.
 
+## Policy freshness
+
+`skill/references/policies.md` starts with a verified-on stamp:
+
+```
+**Policy baseline: 22 October 2026.**
+```
+
+The **Policy Freshness** workflow checks that date on the first day of every
+month and opens a `policy-freshness` issue when it is more than 120 days old.
+
+To re-verify the baseline by hand:
+
+```bash
+python3 scripts/check_policy_freshness.py            # prints PASS / STALE
+python3 scripts/check_policy_freshness.py --today 2027-06-01   # test the stale path
+```
+
+When Etsy changes a policy:
+
+1. Update `skill/references/policies.md` (and the affected reference/playbook).
+2. Mirror behaviour changes in `skill/SKILL.md` and the portable edition.
+3. Add a `CHANGELOG.md` entry and bump the version.
+4. Move the `Policy baseline` date to the verification date.
+5. Run `python3 scripts/sync_etsy_policy.py --build` and commit both files.
+
 ## Style and conventions
 
 - Keep the system's existing voice: direct, evidence-driven, honest about limits.

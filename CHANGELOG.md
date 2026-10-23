@@ -16,6 +16,7 @@ Schema versions are bumped only when state file formats change in ways that requ
 - **Public policy section in README** — the October 2026 rules in plain language with source links, plus how the repo enforces them.
 - **Optional `AI & image compliance` state block** in the listing schema and template.
 - **Phase 2 freshness check** now searches for Etsy AI-policy and image-requirement updates; baseline moved to 22 October 2026.
+- **Monthly Policy Freshness workflow** (`scripts/check_policy_freshness.py` + `.github/workflows/policy-freshness.yml`) — opens a `policy-freshness` issue when the baseline is more than 120 days old.
 
 ### Changed
 - `policies.md` §7 documents the image and AI rules, product-type exceptions, enforcement/refund exposure, and the corrected Creativity Standards URL (`etsy.com/legal/creativity`).

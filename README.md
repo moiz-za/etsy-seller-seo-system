@@ -117,7 +117,7 @@ Product-type exceptions ([Listing Image Requirements](https://www.etsy.com/legal
 
 **California SB 1050** (effective 1 January 2027): images or videos featuring AI-generated synthetic performers may require a clear disclosure for California buyers. The gate flags this in image and video briefs.
 
-*Policy details change. This repository tracks them, but it is not legal advice — verify against Etsy's linked policies and consult your own counsel for edge cases.*
+*Policy details change. This repository tracks them with a monthly CI freshness check, but it is not legal advice — verify against Etsy's linked policies and consult your own counsel for edge cases.*
 
 ---
 
@@ -276,7 +276,7 @@ etsy-seller-seo-system/
 │
 ├── .github/                    ← CI workflows + issue/PR templates
 ├── .githooks/                  ← pre-push leak guard
-├── scripts/                    ← maintainer policy-sync / archive build
+├── scripts/                    ← policy-sync, archive build, freshness check
 │
 ├── skill/                      ← drop into ~/.claude/skills/etsy-seller/
 │   ├── SKILL.md                ← the orchestrator (2 modes + auto-detect)
