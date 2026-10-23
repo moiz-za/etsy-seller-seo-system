@@ -1,12 +1,12 @@
 # Etsy Seller SEO System
 
-A free, evidence-driven **Etsy SEO tool** for AI assistants. It optimizes Etsy listings — titles, all 13 tags, attributes, and descriptions — using live Etsy autocomplete research, top-10 competitor SERP analysis, and current 2026 Etsy policy checks. Runs inside Claude, ChatGPT, Perplexity, or Gemini on free tiers, with no shop registration, setup forms, or API keys.
+A free, evidence-driven **Etsy SEO tool** for AI assistants. It optimizes Etsy listings — titles, all 13 tags, attributes, and descriptions — using live Etsy autocomplete research, top-10 competitor SERP analysis, and current 2026 Etsy policy checks, including the October 2026 AI and listing-image rules. Runs inside Claude, ChatGPT, Perplexity, or Gemini on free tiers, with no shop registration, setup forms, or API keys.
 
 **Quick start:** paste [`portable/Etsy_Listing_System_Instructions.md`](./portable/Etsy_Listing_System_Instructions.md) into any AI chat as your first message, then send your listing. Installing the Claude skill takes three commands — see [Installation](#installation).
 
-[![Version](https://img.shields.io/badge/version-2.1.2-blue?style=flat-square)](CHANGELOG.md)
+[![Version](https://img.shields.io/badge/version-2.2.0-blue?style=flat-square)](CHANGELOG.md)
 [![License](https://img.shields.io/badge/license-MIT-green?style=flat-square)](LICENSE)
-[![Etsy policy](https://img.shields.io/badge/Etsy_policy-2026-green?style=flat-square)](skill/references/policies.md)
+[![Etsy policy](https://img.shields.io/badge/Etsy_policy-22_Oct_2026-green?style=flat-square)](skill/references/policies.md)
 [![Stars](https://img.shields.io/github/stars/moiz-za/etsy-seller-seo-system?style=flat-square&label=stars)](https://github.com/moiz-za/etsy-seller-seo-system/stargazers)
 [![Forks](https://img.shields.io/github/forks/moiz-za/etsy-seller-seo-system?style=flat-square&label=forks)](https://github.com/moiz-za/etsy-seller-seo-system/forks)
 [![PRs](https://img.shields.io/badge/PRs-welcome-brightgreen?style=flat-square)](CONTRIBUTING.md)
@@ -17,6 +17,7 @@ A free, evidence-driven **Etsy SEO tool** for AI assistants. It optimizes Etsy l
 ## Table of Contents
 
 - [Features](#features)
+- [Etsy AI & Image Policy (October 2026)](#etsy-ai--image-policy-october-2026)
 - [Scope and Limits](#scope-and-limits)
 - [Installation](#installation)
 - [How It Works](#how-it-works)
@@ -41,7 +42,7 @@ Everything below is built for Etsy SEO in 2026 — Etsy titles, Etsy tags, attri
 
 Crisp, bullet-first output that reduces token usage by up to 70%. Full raw SERP breakdowns and keyword tracking stay in state and unlock on demand (`"expand"`, `"full report"`).
 
-### Five Immutable System Laws
+### Six Immutable System Laws
 
 Non-bypassable execution discipline (`skill/references/playbooks/system-laws.md`):
 
@@ -49,7 +50,8 @@ Non-bypassable execution discipline (`skill/references/playbooks/system-laws.md`
 2. **Zero hallucination** — live search data, or explicit `[Data Source: Reasoning Engine Fallback]` tagging.
 3. **Strict listing rules** — exactly 13 tags, each 20 characters or fewer, with at most 2 tags per phrase cluster.
 4. **Caveman output protocol** — concise by default, details on request.
-5. **Strict format mandate** — mandatory title formula, title word count, no-emoji rule, and Etsy 2026 AI disclosure.
+5. **Strict format mandate** — mandatory title formula, title word count, no-emoji rule, and AI/image disclosure blocks.
+6. **AI & image compliance gate** — blocks bot-generated listings, AI-authored patterns/recipes/guides, AI prompt bundles, and undisclosed AI creations.
 
 ### Live Research Engine
 
@@ -65,9 +67,11 @@ Non-bypassable execution discipline (`skill/references/playbooks/system-laws.md`
 - No emojis in description text or section headers — clean formatting and screen-reader accessibility.
 - NLP-aware natural-language writing, with no keyword chains, which Etsy's 2026 algorithm penalizes.
 
-### Trademark and Policy Guard
+### Trademark, AI & Image Policy Guard
 
 - Flags trademarked words before a listing is taken down.
+- Runs a hard AI & image gate on every listing: bot-generated listings, AI-authored patterns/recipes/plans, AI prompt bundles, and undisclosed AI creations are blocked before output.
+- Enforces the 22 October 2026 listing-image rules — required unedited real photo, digital-file previews, licensed POD mockups, and no misleading edits.
 - Checks Etsy's current 2026 policies each session via live web search (Phase 2), with a maintainer dual-repo sync engine (`skill/scripts/sync_etsy_policy.py`) that keeps the rulebooks aligned.
 - Platform fit check on saturated niches (over 100K results) before a listing is built.
 
@@ -86,6 +90,34 @@ Non-bypassable execution discipline (`skill/references/playbooks/system-laws.md`
 - Remembers listings across sessions on Claude, avoiding duplicate keyword suggestions.
 - Silent local database at `~/etsy-listings/` for the keyword map, refresh schedule, and listing state.
 - Keyword reuse warnings with sibling-phrase suggestions.
+
+---
+
+## Etsy AI & Image Policy (October 2026)
+
+On **22 October 2026**, Etsy published [new rules for AI use and listing images](https://www.etsy.com/seller-handbook/article/1522733284810). They apply to every seller, not just AI-heavy shops. Short version:
+
+| Rule | What it means for your shop |
+|---|---|
+| **Unedited photo required** | Most listings need at least one real, unedited photo of the actual item against a real background. Don't AI-edit or retouch that photo. |
+| **Images must be truthful** | No hiding flaws, damage, or changing colour, texture, scale, or materials. Other photos may be AI-edited for lighting/background if the item still looks like what ships. |
+| **No bot-generated listings** | Every item needs your own prompts, curation, and review. Mass-automated listing generation is prohibited. |
+| **No AI-generated instructions** | Patterns, recipes, building plans, manuals, and instructional guides must be your own work — not AI-generated. |
+| **No AI prompt bundles** | You can't sell prompts separately from the finished artwork. |
+| **Disclose AI creations** | If AI created the item, say so in the listing description. |
+
+Product-type exceptions ([Listing Image Requirements](https://www.etsy.com/legal/policy/listing-image-requirements/253962679005)):
+
+- **Print-on-demand** — licensed stock mockups are allowed.
+- **Digital downloads** — include a visual preview or excerpt of the files buyers receive.
+- **Customised / made-to-order** — use photos of real finished items; the first image must show the finished customised item.
+- **Patterns, recipes, seeds** — include at least one real, unedited photo of a finished result. AI images can't be the only finished-result images.
+
+**How this repo handles it:** every listing runs the AI & image compliance gate (`skill/references/playbooks/ai-image-compliance.md`). It blocks the three prohibited categories, requires the disclosure line for AI-created items, and adds the required photo/preview step to the publish checklist. Unknown AI status never becomes a false claim — the tool won't say "no AI" or "100% handmade" unless you confirm it, and it prints a disclosure reminder on every listing.
+
+**California SB 1050** (effective 1 January 2027): images or videos featuring AI-generated synthetic performers may require a clear disclosure for California buyers. The gate flags this in image and video briefs.
+
+*Policy details change. This repository tracks them, but it is not legal advice — verify against Etsy's linked policies and consult your own counsel for edge cases.*
 
 ---
 
@@ -307,7 +339,7 @@ The skill and SellWren share the same rulebooks and 2026 Etsy policy alignment. 
 ## FAQ
 
 **Is there a free path?**
-Yes. Paste `portable/Etsy_Listing_System_Instructions.md` into any free-tier chat (Claude.ai, ChatGPT, Gemini). All SEO rules, live research (with web browsing), trademark scanning, and scope diagnosis are included. See [Free vs Paid](#free-vs-paid).
+Yes. Paste `portable/Etsy_Listing_System_Instructions.md` into any free-tier chat (Claude.ai, ChatGPT, Gemini). All SEO rules, live research (with web browsing), trademark and AI/image compliance scanning, and scope diagnosis are included. See [Free vs Paid](#free-vs-paid).
 
 **Do I need API keys or a paid SaaS account?**
 No. The system runs inside your AI tool — no API keys, subscriptions, or hosted service.
@@ -329,6 +361,12 @@ The system says so and points to concrete next steps, rather than rewriting tags
 
 **Can I use it for multiple shops?**
 Yes. Use a separate chat thread per shop; each thread is its own database.
+
+**Does this tool generate AI listings for me?**
+No. It is a human-in-the-loop assistant: you bring the product, photos, and creative decisions; it optimizes the listing and checks it against Etsy policy. Batch mode processes your rows for review — it is not an auto-publish pipeline, because Etsy prohibits bot-generated listings.
+
+**What happens if my product is a pattern, recipe, or instructions?**
+The gate checks that the instructions are your own work and that your photos include a real finished result. AI-generated instructions are blocked, and AI images can't be the only evidence of the finished result.
 
 **Is this affiliated with Etsy?**
 No. This project is not affiliated with, endorsed by, or sponsored by Etsy, Inc.
@@ -357,7 +395,8 @@ git config core.hooksPath .githooks
 
 | Version | Date | Summary |
 |---------|------|---------|
-| **2.1.2** | October 2026 | Sync & consistency: install-path fix, April 2026 title guidance, CI hardening, rule sync |
+| **2.2.0** | October 2026 | Etsy AI & image policy (22 Oct 2026): new Law 6 gate, unedited-photo rules, AI disclosure, prohibited AI categories, public policy section |
+| 2.1.2 | October 2026 | Sync & consistency: install-path fix, April 2026 title guidance, CI hardening, rule sync |
 | 2.1.1 | September 2026 | Archive fix, maintainer-script path sanitization, SellWren links, leak guard |
 | 2.1.0 | July 2026 | Caveman Output Mode + 5 Immutable System Laws across skill and portable editions |
 | 2.0.2 | July 2026 | Etsy August 2026 Creativity Standards update, `.skill` packaging fix, dual-layout bootstrap |

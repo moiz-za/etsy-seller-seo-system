@@ -2,9 +2,14 @@
 
 This file is universal — it applies to ANY shop, ANY niche, ANY product type (digital, physical, handmade, vintage). Nothing is hardcoded.
 
+**Policy baseline: 22 October 2026.**
+
 **Live verification:** for any policy interpretation, fetch the relevant page from Etsy directly before relying on stored knowledge:
 - Seller policies index: https://www.etsy.com/legal/sellers/
-- Creativity standards: https://help.etsy.com/hc/en-us/articles/360044809332
+- Creativity standards: https://www.etsy.com/legal/creativity
+- Listing image requirements: https://www.etsy.com/legal/policy/listing-image-requirements/253962679005
+- Etsy's stance on AI creations: https://www.etsy.com/seller-handbook/article/1275449912004
+- AI updates announcement (22 Oct 2026): https://www.etsy.com/seller-handbook/article/1522733284810
 - Prohibited items: https://www.etsy.com/legal/prohibited
 - Intellectual property: https://www.etsy.com/legal/ip
 - Returns & refunds: https://help.etsy.com/hc/en-us/articles/115013328267
@@ -13,15 +18,19 @@ This file is universal — it applies to ANY shop, ANY niche, ANY product type (
 
 ## 1. Creativity Standards — What Can Be Sold
 
-**Last major update: June 10, 2025.** Etsy classifies every listing under one of these creativity buckets. The bucket determines what disclosures and limits apply.
+**Last major update: October 22, 2026.** Etsy classifies every listing under one of these creativity buckets. The bucket determines what disclosures and limits apply.
 
 ### Designed by a Seller
 Original designs created by the seller, whether sold as digital downloads or as physical handmade items.
 - **Originality Requirement (August 11, 2026 Enforcement Update):** Items produced using computerized tools (Cricut, CNC, laser cutters, sublimation printers) must rely on the seller's own original creative design. Listing un-modified third-party templates, generic clipart, or pre-made cut files bought from others no longer qualifies under "Designed by a seller".
-- **AI-Assisted Creations:** Allowed IF the seller prompted, directed, and contributed to the output.
+- **Seller-Prompted AI Creations:** Allowed IF the seller prompted, directed, and curated the output — and **must be disclosed inside the listing description** (Creativity Standards, updated 22 Oct 2026).
+- **Prohibited AI content (22 Oct 2026):**
+  - **Bot-generated listings** — mass-automated generation of listings or products without individualised human prompting, curation, and creative input. Every item needs direct human involvement.
+  - **AI-generated functional instructions** — patterns, recipes, building/woodworking plans, manuals, instructional guides, and e-books. The instructions themselves must be the seller's own work.
+  - **AI prompt bundles** — prompts sold separately from the finished artwork. Does not qualify as "designed by a seller".
 - **Listing Configuration for AI Items:**
   - Dropdown settings: Who made it ➔ *"I did"*, When ➔ *"Made to order"* (or 2020-2026), What it is ➔ *"Finished product / Digital file"*.
-  - **Description Disclosure:** Must include a concise, factual disclosure statement in the listing description (e.g., *"Created by the seller using AI generation tools and refined for vector cutting/printing"*).
+  - **Description Disclosure:** Must include a concise, factual disclosure statement in the listing description (e.g., *"Created with AI assistance using my own prompts and refined by me."*).
 - **Process Audit Trail:** Sellers should keep an audit trail (original prompts, vector source files, sketches) to prove originality if flagged by automated Etsy moderation.
 - PLR (Private Label Rights) files: only listable if your specific license explicitly permits resale on Etsy — verify the license terms in writing before listing.
 - Production partners: required to be disclosed in the listing (see §5).
@@ -138,6 +147,10 @@ Policy updated April 2, 2026. Enforcement begins August 11, 2026.
 - DALL-E, Midjourney, Grok, Gemini, Stable Diffusion each have different commercial use terms — check them per tool, per tier (free vs paid often differs)
 - Output that resembles a specific living artist's style may still trigger an IP complaint even if technically generated
 - Output containing identifiable brand elements (logos, mascots) is never safe to sell
+- **Disclose AI use in the description** — required for seller-prompted AI creations
+- **Prompts are not a product** — AI prompt bundles are prohibited
+- **Instructions must be human-authored** — patterns, recipes, plans, manuals, and instructional guides may not be AI-generated
+- Keep original prompts and working files as an audit trail
 
 ### What Happens When a Complaint Is Filed
 1. Listing deactivated immediately — no prior warning
@@ -158,6 +171,7 @@ Policy updated April 2, 2026. Enforcement begins August 11, 2026.
 ## 6. Listing Content Accuracy
 
 - All listing text and images must accurately represent the product
+- **Image accuracy (22 Oct 2026):** see §7 — required unedited photo, no misleading edits, product-type rules
 - Do not claim compatibility with software the files don't actually work in (e.g., "Cricut compatible" requires actual Cricut-compatible files)
 - Do not claim "commercial use" if the source license does not permit it
 - Do not list features the buyer won't receive
@@ -166,7 +180,46 @@ Policy updated April 2, 2026. Enforcement begins August 11, 2026.
 
 ---
 
-## 7. Community Behavior (April 2026 Update)
+## 7. Listing Images, AI Use & Synthetic Media (22 Oct 2026)
+
+Full gate and product-type tables: `playbooks/ai-image-compliance.md`. Run it on every listing.
+
+### Image requirements
+
+- **Required for most products:** at least one **unedited photo of the actual item against a real background**. Do not use photo-editing software or AI tools to alter that photo.
+- **All images must accurately represent** colour, condition, scale, and materials. No hiding flaws, concealing damage, or making the item look different from what ships.
+- **Edits allowed on your other images:** lighting/exposure/colour balance to match real life; cropping, resizing, straightening; background cleanup or replacement.
+- **Edits prohibited anywhere:** changing the product's colour, texture, or condition; removing defects; using AI to change the core design or features of a physical item.
+- **Consequence:** if a buyer opens a case because the received item is materially different from the listing, the seller may be responsible for refunding them. Repeated violations can lead to shop removal.
+
+### Image requirements by product type
+
+| Product type | Requirement |
+|---|---|
+| Physical handmade | Real unedited photo of the actual item; first image must be original photo/video of the final product |
+| Personalised / customised / made-to-order | Photos of real finished items; first image must show a finished customised item — never a blank or "Your Text Here" placeholder |
+| Print-on-demand | Licensed stock mockups allowed; must preserve real print placement, scale, colour, and base product |
+| Digital downloads | Visual preview or excerpt of the files buyers receive; AI/representative imagery allowed only for lifestyle slots |
+| Digital audio / no visuals | Representative imagery, including AI, allowed if it doesn't mislead |
+| Patterns, recipes, seeds | ≥1 real unedited photo of something made using the product; AI images cannot be the only finished-result images |
+| Functional instructions | Same finished-result rule, plus the instructions must be the seller's own work |
+
+**Best practice (Etsy's recommendation):** make the first photo the clearest, most realistic representation of the item. If you edited any photo with AI, say so in the listing description.
+
+### AI use
+
+- **Allowed:** seller-prompted AI creations with a clear creative role, disclosed in the listing description.
+- **Prohibited:** bot-generated listings; AI-generated functional instructions; AI prompt bundles.
+- **Disclosure sentence:** `Created with AI assistance using my own prompts and refined by me.`
+- **Never claim "no AI" / "100% handmade" when the seller has not confirmed it.**
+
+### California SB 1050 — synthetic performers (effective 1 Jan 2027)
+
+Listing images or videos that prominently feature an **AI-generated synthetic performer** (a realistic human figure/voice that is not an identifiable real person) may be treated as advertising to California buyers and may require a clear disclosure. Prefer a real person, the seller's own hands, or a non-human scene. Sellers should confirm their own obligations with counsel.
+
+---
+
+## 8. Community Behavior (April 2026 Update)
 
 - Sellers must not use Etsy Messages, Favorites, or Collections to aggregate content in harmful ways or harass other sellers
 - Review-manipulation (coordinated fake reviews, review-swap rings, paid reviews) carries permanent ban risk
@@ -175,7 +228,7 @@ Policy updated April 2, 2026. Enforcement begins August 11, 2026.
 
 ---
 
-## 8. Audit Checklist Before Publishing
+## 9. Audit Checklist Before Publishing
 
 Run this against every new or rewritten listing:
 
@@ -184,6 +237,14 @@ Run this against every new or rewritten listing:
 - [ ] Materials/files listed match what the buyer will actually receive
 - [ ] Commercial use claim (if made) is backed by actual license rights
 - [ ] AI disclosure present if any AI tool was used in creation
+- [ ] **Not an AI prompt bundle** (prompts sold without finished artwork)
+- [ ] **Not AI-generated functional instructions** (pattern, recipe, plan, manual, instructional guide)
+- [ ] **Listing created and reviewed by a human** — no bulk/bot-generated output
+- [ ] **Image plan has the required evidence** — unedited real photo (physical, custom, patterns/recipes/seeds) or content preview/excerpt (digital downloads)
+- [ ] **First image rule met** — real final product; finished customised item for personalised listings
+- [ ] **No misleading image edits** — colour, texture, condition, flaws, and scale unchanged
+- [ ] **AI-edited images noted in the description** (recommended)
+- [ ] **No undisclosed AI synthetic performer** in images/video (CA SB 1050, effective 1 Jan 2027)
 - [ ] Production partner disclosed in shop settings (if physical + made by anyone other than seller)
 - [ ] Category and attributes match the actual product
 - [ ] Shipping price under $6 (US physical) or "Digital download" set correctly

@@ -1,10 +1,10 @@
 # Playbook — Immutable System Laws & Execution Discipline
 
-This playbook establishes the non-bypassable **5 Immutable System Laws** governing the Etsy Seller SEO System. All AI agents, reasoning models, and portable single-file instructions MUST adhere strictly to these laws during workflow execution.
+This playbook establishes the non-bypassable **6 Immutable System Laws** governing the Etsy Seller SEO System. All AI agents, reasoning models, and portable single-file instructions MUST adhere strictly to these laws during workflow execution.
 
 ---
 
-## 📜 The 5 Immutable System Laws
+## 📜 The 6 Immutable System Laws
 
 ### ⚖️ Law 1: Immutable Operational Integrity
 - **Directive:** Every workflow execution MUST process all operational steps (Intake, Mode Auto-Detection, Keyword Research, SERP Scraping, Competition Difficulty Assessment, Title/Tag/Attribute/Description Construction, and Pinterest Marketing Block) sequentially without skipping or shortcutting.
@@ -34,7 +34,18 @@ This playbook establishes the non-bypassable **5 Immutable System Laws** governi
   - **Title Word Limit:** 6 to 12 words (ABSOLUTE MAXIMUM: 14 words; reject titles with 15+ words).
   - **Prohibited Subjective Words Stoplist (ZERO ALLOWED):** `cute`, `adorable`, `beautiful`, `perfect`, `stunning`, `amazing`, `incredible`, `pretty`, `awesome`, `gorgeous`, `lovely`, `sweet`, `unique`, `best`, `top`, `wonderful`, `charming`.
   - **No-Emoji Mandate:** Zero emojis allowed in description text or section headers (prevents spam signals and ensures screen-reader accessibility).
-  - **Mandatory Sections:** Meta zone (first 160 chars), Included Formats, Compatibility, Usage License, Etsy 2026 AI Disclosure, Hero Alt Text, and Pinterest Marketing Block.
+  - **Mandatory Sections:** Meta zone (first 160 chars), Included Formats, Compatibility, Usage License, AI & image disclosure, Hero Alt Text, and Pinterest Marketing Block.
+
+### 🛡️ Law 6: AI & Image Compliance Gate
+- **Directive:** Every listing MUST pass the AI & image gate (`playbooks/ai-image-compliance.md`) before output. Etsy's 22 Oct 2026 policy makes this a removal-risk area, not a style preference.
+- **Rule:**
+  - **Never produce** a listing package for an item that is mass- or bot-generated without the seller's individual creative input; never sell an AI prompt bundle; never write AI-generated functional instructions (patterns, recipes, plans, manuals, guides) on the seller's behalf. Drafting listing copy for a human seller who reviews and publishes it is allowed and expected.
+  - **AI-created items** require the description disclosure: `Created with AI assistance using my own prompts and refined by me.`
+  - **Never claim "no AI" / "100% handmade"** when the seller has not confirmed it. Unknown AI status → PASS with a conditional disclosure reminder.
+  - **Image plan must satisfy the product-type rule:** real unedited photo (physical, customised, patterns/recipes/seeds) or file preview (digital downloads). Never fabricate a photo the seller doesn't have.
+  - **First image** must show the real final product; finished customised item for personalised listings.
+  - **No misleading edits** — colour, texture, condition, scale, and flaws stay truthful.
+  - **Gate result MUST appear in the output block** (`✅ PASS` / `⚠️ ACTION REQUIRED` / `⛔ BLOCKED`).
 
 ---
 
@@ -43,5 +54,8 @@ Any execution exhibiting the following defects violates the System Laws and MUST
 - ❌ Outputting tags over 20 characters in length.
 - ❌ Outputting subjective filler words (`cute`, `stunning`, `perfect`) in titles.
 - ❌ Using emojis in listing description text or section headers.
-- ❌ Omitting the Etsy AI Disclosure settings.
+- ❌ Omitting the AI disclosure when the item was created with AI.
+- ❌ Outputting a prompt bundle, AI-authored pattern/recipe/guide, or bulk-generated listing.
+- ❌ Marking a physical/custom/pattern listing compliant without a real unedited photo plan.
+- ❌ Claiming "no AI" or "100% handmade" without seller confirmation.
 - ❌ Outputting bloated, conversational prose when Caveman Mode is active.

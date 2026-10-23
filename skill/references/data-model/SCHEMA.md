@@ -143,6 +143,13 @@ P1 = overdue · P2 = within 30 days · P3 = within 90 days · Recent = skip
 ### Hero image alt text
 <alt text — 100–150 chars, includes primary keyword>
 
+### AI & image compliance (optional fields — added 2026-10-22)
+- Item origin: <human-made / seller-prompted AI / unknown>
+- Content type: <physical / digital design / functional instructions / prompt bundle>
+- Image evidence: <real unedited photo / content preview / licensed mockup / missing>
+- AI disclosure in description: <yes / no / not required>
+- Gate result: <PASS / ACTION REQUIRED / BLOCKED> — YYYY-MM-DD
+
 ### Pinterest block
 - Pin title: <text>
 - Board: <name>
@@ -306,5 +313,7 @@ The skill treats all listings in a single database as one logical set. Multi-sho
 ## Schema versioning
 
 If a future Etsy platform change requires a state format change (new attribute type, new field on the SERP, etc.), bump the schema version and document the migration in CHANGELOG.md.
+
+**Optional fields (v2.2.0):** the `AI & image compliance` block in the listing file is additive and optional. Existing v2.0 state files remain valid — no migration required. The skill writes the block on the next touch of each listing.
 
 Schema version 2.0 is NOT backwards-compatible with v1.x state files. Users migrating from v1.x must manually flatten their per-shop CSVs into the unified `keyword-map.md`.

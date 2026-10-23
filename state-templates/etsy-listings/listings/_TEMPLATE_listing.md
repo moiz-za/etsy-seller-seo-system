@@ -66,6 +66,13 @@
 ### Hero image alt text
 <alt text — 100–150 chars, includes primary keyword>
 
+### AI & image compliance (optional)
+- **Item origin:** <human-made / seller-prompted AI / unknown>
+- **Content type:** <physical / digital design / functional instructions / prompt bundle>
+- **Image evidence:** <real unedited photo / content preview / licensed mockup / missing>
+- **AI disclosure in description:** <yes / no / not required>
+- **Gate result:** <PASS / ACTION REQUIRED / BLOCKED> — YYYY-MM-DD
+
 ### Pinterest block
 - **Pin title:** <text>
 - **Board name:** <name>

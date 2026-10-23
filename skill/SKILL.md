@@ -1,16 +1,16 @@
 ---
 name: etsy-seller
 description: >
-  Etsy SEO optimization for existing and new listings. Auto-detects REWRITE (when user pastes a current title + tags + description) or CREATE (when user gives a short product context). Triggers on "rewrite this listing", "optimize my Etsy listing", "fix my title and tags", "create new listing", "make a new Etsy listing". Uses live Etsy autocomplete + competitor SERP scraping for evidence-driven keyword research. Enforces 2026 Etsy rules — tag ≤20 chars, primary keyword in first 40 chars, indexing spread across title/tags/attributes/description/hero alt, NLP-aware writing, trademark stoplist scan. When the user's problem isn't SEO (CTR, conversion, photos, price, saturated niche), it says so directly and routes to concrete next steps. Silently maintains a markdown listing database at ~/etsy-listings/ for cross-session memory on Claude/Cowork. Catches duplicate primary keywords across the user's own listings.
+  Etsy SEO optimization for existing and new listings. Auto-detects REWRITE (current title + tags + description pasted) or CREATE (short product context). Triggers on "rewrite this listing", "optimize my Etsy listing", "fix my title and tags", "create new listing". Uses live Etsy autocomplete + competitor SERP scraping for evidence-driven keyword research. Enforces 2026 Etsy rules — tag ≤20 chars, primary keyword in first 40 chars, indexing spread across title/tags/attributes/description/hero alt, trademark stoplist scan, and a hard AI & listing-image compliance gate (bot-generated listings, AI-authored instructions, prompt bundles, unedited-photo rules). When the problem isn't SEO (CTR, conversion, photos, price, saturated niche), it says so and routes to concrete next steps. Silently maintains a markdown listing database at ~/etsy-listings/ for cross-session memory. Catches duplicate primary keywords across the user's listings.
 ---
 
 # Etsy Seller — SEO Optimization System
 
-**Schema version:** 2.0 · **Policy version:** 2026 (Featuring System Laws & Caveman Output Protocol)
+**Schema version:** 2.0 · **Policy version:** 2026 (rev. 22 Oct 2026 — AI & image compliance) · **Features:** System Laws & Caveman Output Protocol
 
 ---
 
-## 📜 THE 5 IMMUTABLE SYSTEM LAWS
+## 📜 THE 6 IMMUTABLE SYSTEM LAWS
 
 All phase executions MUST strictly enforce `references/playbooks/system-laws.md`:
 
@@ -18,7 +18,8 @@ All phase executions MUST strictly enforce `references/playbooks/system-laws.md`
 2. **Zero-Hallucination Evidence Traceability:** Autocomplete phrases and competitor stats MUST trace to live search data or explicitly tag `[Data Source: Reasoning Engine Fallback]`.
 3. **Mandatory 20-Character Tag Limit & Overlap Rules:** Exactly 13 tags, every tag ≤20 chars (including spaces), no exact 2+ word phrase shared across more than 2 tags, zero emojis/special symbols in tags.
 4. **Caveman Output Protocol:** Crisp, bullet-first, token-efficient outputs by default; full raw SERP breakdowns unlocked on demand (`"expand"`, `"full report"`, `"show details"`).
-5. **Strict Listing Format & No-Emoji Mandate:** Mandatory Title Formula (`[Primary Keyword] [Style Descriptor] | [Format]`), Title Word Count (6–12 words, max 14), Prohibited Subjective Words Stoplist (`cute`, `beautiful`, etc.), zero emojis in description text or section headers, Etsy 2026 AI Disclosure, Hero Alt Text, and Pinterest Marketing Block.
+5. **Strict Listing Format & No-Emoji Mandate:** Mandatory Title Formula (`[Primary Keyword] [Style Descriptor] | [Format]`), Title Word Count (6–12 words, max 14), Prohibited Subjective Words Stoplist (`cute`, `beautiful`, etc.), zero emojis in description text or section headers, AI & image disclosure blocks, Hero Alt Text, and Pinterest Marketing Block.
+6. **AI & Image Compliance Gate (22 Oct 2026):** Never produce a listing package for an item that is mass- or bot-generated without the seller's individual creative input; never sell an AI prompt bundle; never write AI-generated functional instructions (patterns, recipes, plans, manuals, guides) on the seller's behalf. Drafting listing copy for a human seller who reviews and publishes it is allowed and expected. Every AI-created item needs a description disclosure. Physical, customised, and pattern/recipe listings need a real unedited photo plan. Gate result MUST appear in the output. See `references/playbooks/ai-image-compliance.md`.
 
 ---
 
@@ -76,8 +77,10 @@ Run these searches in parallel before producing any output:
 "Etsy seller policy changes [current year]"
 "Etsy search algorithm update [current year]"
 "Etsy prohibited items update [current year]"
+"Etsy AI policy update [current year]"
+"Etsy listing image requirements update [current year]"
 ```
-If results newer than May 2026 surface meaningful changes, flag them to the user and override stored knowledge.
+If results newer than **22 October 2026** surface meaningful changes, flag them to the user and override stored knowledge. Pay particular attention to AI-use, listing-image, and functional-instructions rules — these change fastest and carry removal risk.
 
 ### Phase 3 — Detect action + extract input
 
@@ -87,7 +90,8 @@ Auto-detect REWRITE vs CREATE from input shape (see table above). Extract everyt
 - Product type, niche, style
 - File formats (parse description for SVG, PNG, EPS, DXF, PDF, JPG, AI, Canva, ZIP)
 - Commercial use status (search description; if absent → don't claim)
-- AI disclosure (search description; if present preserve, if absent don't add)
+- AI status: created with AI / AI-edited images only / no AI stated / unknown
+- Existing image evidence: real unedited photo / content preview / licensed mockup / none described
 - Delivery method (digital/physical cues)
 - Target market (US/UK/EU spelling cues)
 
@@ -98,15 +102,17 @@ Auto-detect REWRITE vs CREATE from input shape (see table above). Extract everyt
 - Style descriptor
 - Commercial use mention
 - AI assistance mention
+- Image-plan hints (does the seller have real photos, a preview grid, or a licensed mockup?)
 - Recipient/use case hints
 
 Ask the user ONE question only if the product noun itself is unidentifiable. Otherwise zero questions — process with defaults.
 
 **Default-safe behaviors when info is missing:**
 - Commercial use not mentioned → omit Block 6 (Usage Rights) from description; don't claim it
-- AI not mentioned → omit Block 8 (AI Disclosure); don't add it
+- AI not mentioned → **do not claim "no AI" and do not invent a disclosure.** Carry the conditional disclosure reminder from Phase 4G so the seller adds one if any AI touched the design, instructions, or photos
 - Quantity not mentioned → describe without a count
 - Style not mentioned → use the most common autocomplete style descriptor for the niche
+- Image evidence not described → output the image plan with an explicit requirement line, never a fabricated photo
 
 ### Phase 4 — Live keyword research (the most critical phase)
 
@@ -150,6 +156,21 @@ If a holiday is within 6 weeks AND the niche fits → incorporate seasonal phras
 **4F — Trademark stoplist scan:**
 See `references/playbooks/trademark-stoplist.md`. If ANY field (title/tag/description/attribute) contains a stoplist match → BLOCK output and ask user to rephrase.
 
+**4G — AI & image compliance gate (hard gate):**
+See `references/playbooks/ai-image-compliance.md`. Run the gate questions before building output. Block conditions:
+
+| Condition | Verdict |
+|---|---|
+| AI prompt bundle / prompt pack (prompts sold without finished art) | ⛔ BLOCK |
+| Functional instructions (pattern, recipe, plan, manual, guide) generated by AI | ⛔ BLOCK |
+| Bulk/bot-generated listing with no individual human review | ⛔ BLOCK |
+| Item created with AI and disclosure missing | ⛔ BLOCK until the disclosure line is added |
+| Seller states only AI/simulated images exist (physical / custom / pattern-recipe-seed) | ⚠️ ACTION REQUIRED |
+| Image plan cannot include the required evidence for the product type (real unedited photo or file preview) | ⚠️ ACTION REQUIRED |
+| AI status unknown | ✅ PASS with a conditional disclosure reminder — never claim "no AI" |
+
+The gate result MUST appear in the output block. `⚠️ ACTION REQUIRED` items are prepended to the "BEFORE YOU PUBLISH" checklist.
+
 ### Phase 5 — Keyword reuse check (soft warning, no enforcement)
 
 Read primary keywords from `keyword-map.md` (or session-state if in portable mode). If the candidate primary matches an existing listing's primary cluster:
@@ -179,8 +200,9 @@ Build the listing per rules in `references/listing-guide.md`:
 - **Title:** primary keyword in first 40 chars; 6–12 words; natural language, NO comma-chain keyword stuffing; ≤140 chars total; no trademarked words; no subjective adjectives (beautiful, perfect, stunning, amazing, incredible)
 - **Tags:** 13 of 13; every tag ≤20 chars including spaces; every tag traces to autocomplete/SERP/expansion evidence; every tag passes phrase-coherence check ("would a buyer type this verbatim?"); primary niche noun may repeat in 2–3 tags but no exact 2+ word phrase repeats
 - **Attributes:** Style, Occasion, Recipient values match Phase 4 buyer-language phrases; at least one attribute value echoes a primary-cluster word
-- **Description:** 9-block structure (Hook → Features → What's Included → Delivery → Compatibility → Usage Rights → Personalization → AI Disclosure → Closing); primary keyword in first 40 chars; meta zone (first 160 chars) is a complete product pitch using the intent-appropriate hook template; 250–700 words; no "Thank you for visiting" / "This listing is for" openers
+- **Description:** 9-block structure (Hook → Features → What's Included → Delivery → Compatibility → Usage Rights → Personalization → AI & Image Disclosure → Closing); primary keyword in first 40 chars; meta zone (first 160 chars) is a complete product pitch using the intent-appropriate hook template; 250–700 words; no "Thank you for visiting" / "This listing is for" openers
 - **Category:** most specific subcategory available
+- **Image plan:** 6-slot plan per `listing-guide.md §6` and `playbooks/ai-image-compliance.md` — includes the required real unedited photo (physical/custom/pattern-recipe-seed) or file preview (digital). Never fabricate a photo the seller doesn't have
 - **Hero image alt text:** 100–150 chars, includes primary keyword
 - **Pinterest block:** pin title (inspiration framing for digital / lifestyle for physical, primary keyword in first 40 chars, ≤100 chars), board name (25–40 chars), board description (150–300 chars), pin description (220–232 chars, no hashtags, no "link in bio" language), keyword sync block
 
@@ -216,7 +238,7 @@ For both — when scope-out problem detected, output the action layer pointers (
 ### Phase 9 — Write state (Cowork/Claude only)
 
 Update markdown state files directly using Edit/Write tools:
-- Update or create `~/etsy-listings/listings/L###-<slug>.md` (full listing state, change history)
+- Update or create `~/etsy-listings/listings/L###-<slug>.md` (full listing state, change history, AI & image gate result)
 - Append/update row in `~/etsy-listings/keyword-map.md` (markdown table)
 - Append/update row in `~/etsy-listings/refresh-schedule.md` (markdown table)
 - For SQR-triggered runs: write `~/etsy-listings/sqr-imports/YYYY-MM-DD_L###.md`
@@ -253,6 +275,15 @@ TAGS (13/13):
 ATTRIBUTES:
 Style: [value]    Occasion: [value]    Recipient: [value]    File Type: [extracted]    [other applicable]
 
+IMAGE PLAN (compliance-checked):
+1. [slot 1 — required evidence or lifestyle shot]
+2. [slot 2]
+3. [slot 3]
+4. [slot 4]
+5. [slot 5]
+6. [slot 6+ optional]
+Required evidence: [real unedited photo / file preview / licensed POD mockup] [✅ / ⚠️]
+
 DESCRIPTION:
 [Meta zone — first 160 chars: "..."] ✅
 
@@ -261,6 +292,13 @@ DESCRIPTION:
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 INDEXING SPREAD ✅  ·  KEYWORD REUSE ✅ (no overlap with existing listings)
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+AI & IMAGE COMPLIANCE
+Item origin:     [human-made / seller-prompted AI / unknown — do not guess]
+Content type:    [physical / digital design / functional instructions / prompt bundle]
+Image plan:      [unedited photo confirmed / content preview / licensed POD mockup / ACTION REQUIRED: <what's missing>]
+Disclosure:      [required — added / required — MISSING / not stated — add only if AI was used]
+Gate:            ✅ PASS  ·  ⚠️ ACTION REQUIRED  ·  ⛔ BLOCKED
 
 RATIONALE (2-line summary):
 - [What changed most / why this keyword]
@@ -274,6 +312,10 @@ BEFORE YOU PUBLISH — copy-paste checklist
 □ Description updated (copy first 160 chars carefully)
 □ Attributes updated (Style / Occasion / Recipient / File Type)
 □ Hero image alt text updated (now includes primary keyword)
+□ AI disclosure added if AI touched the design, instructions, or photos
+□ Required real unedited photo uploaded (physical/custom/pattern) OR file preview included (digital)
+□ First image shows the real final product — finished customised item for personalised listings
+□ No misleading edits; AI-edited photos noted in the description
 □ Category set to most specific subcategory
 □ Save → preview → confirm no tags got truncated
 □ Re-run skill at day 14 to check impressions
@@ -391,6 +433,8 @@ Fetch SERP, extract top 3 organic listings + their shop pages. Capture: title, p
 ### Batch process (when user pastes CSV of listings)
 Parse rows, identify REWRITE vs CREATE per row, process sequentially. Apply keyword reuse check across the entire batch in pre-flight. Output condensed summary per row, full state written to listing files.
 
+**Human-in-the-loop is mandatory.** Every listing must be individually reviewed by the seller before publishing — Etsy prohibits bot-generated listings. Batch mode is decision support for a human, never an auto-publish pipeline. The AI & image gate (Phase 4G) runs per row; rows that are prompt bundles or AI-authored functional instructions are skipped and flagged, not processed.
+
 ---
 
 ## 📚 REFERENCE FILES — Load as needed
@@ -404,6 +448,7 @@ Parse rows, identify REWRITE vs CREATE per row, process sequentially. Apply keyw
 - `references/data-model/SCHEMA.md` — state file definitions
 
 ### Playbooks (load when relevant)
+- `references/playbooks/ai-image-compliance.md` — AI & image gate: banned AI categories, unedited-photo rules, disclosure wording, CA SB 1050
 - `references/playbooks/action-layer-pointers.md` — concrete next steps when diagnosis is out-of-SEO-scope
 - `references/playbooks/platform-fit-check.md` — saturated-niche reality check
 - `references/playbooks/listing-health-score.md` — 0–100 scoring rubric
@@ -448,3 +493,7 @@ Parse rows, identify REWRITE vs CREATE per row, process sequentially. Apply keyw
 | Listing fee | $0.20 | May 2026 |
 | Transaction fee | 6.5% | May 2026 |
 | Manual renewal | Marginal benefit (~5–15% impression bump 24–48h); not worth $0.20 per listing | May 2026 |
+| Unedited photo rule | ≥1 real unedited photo (exceptions by product type) | Oct 2026 |
+| AI disclosure | Required in description for AI-created items | Oct 2026 |
+| Banned AI categories | Bot-generated listings · AI functional instructions · AI prompt bundles | Oct 2026 |
+| Synthetic performer disclosure | CA SB 1050, effective 1 Jan 2027 | Oct 2026 |

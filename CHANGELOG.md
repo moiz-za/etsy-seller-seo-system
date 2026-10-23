@@ -4,6 +4,36 @@ All notable changes to the Etsy Seller System.
 
 Schema versions are bumped only when state file formats change in ways that require migration.
 
+## [2.2.0] — October 2026
+
+**Policy-breaking release: Etsy's 22 October 2026 AI and listing-image rules.** State schema remains 2.0 (new fields are optional; no migration).
+
+### Added
+- **Law 6 — AI & Image Compliance Gate** (`playbooks/ai-image-compliance.md`): a hard gate alongside the trademark stoplist. Blocks AI prompt bundles, AI-generated functional instructions (patterns, recipes, plans, manuals, guides), bot-generated listings, and undisclosed AI creations. Emits a `✅ PASS / ⚠️ ACTION REQUIRED / ⛔ BLOCKED` result in every output.
+- **Listing-image compliance rules**: required unedited real photo for physical/customised/pattern-recipe-seed listings, file preview/excerpt for digital downloads, licensed stock mockups for POD, finished-customised-item first image for personalised listings, and no misleading edits.
+- **AI disclosure logic**: AI-created items now require `Created with AI assistance using my own prompts and refined by me.` in the description; AI-edited photos get an optional note; functional guides get an authorship line.
+- **California SB 1050** synthetic-performer guidance (effective 1 Jan 2027) in image, video, and Pinterest briefs.
+- **Public policy section in README** — the October 2026 rules in plain language with source links, plus how the repo enforces them.
+- **Optional `AI & image compliance` state block** in the listing schema and template.
+- **Phase 2 freshness check** now searches for Etsy AI-policy and image-requirement updates; baseline moved to 22 October 2026.
+
+### Changed
+- `policies.md` §7 documents the image and AI rules, product-type exceptions, enforcement/refund exposure, and the corrected Creativity Standards URL (`etsy.com/legal/creativity`).
+- `policies.md` audit checklist expanded from 10 to 17 items covering AI categories, image evidence, and synthetic media.
+- `listing-guide.md` §6 rewritten as *Photos, Video & Image Compliance*; hero-shot guidance is now product-type-aware instead of "lifestyle mockup" for every listing.
+- Description Block 8 renamed to *AI & Image Disclosure* with three conditional templates.
+- `listing-health-score.md` compliance scoring rebalanced to 6 checks (still 10 points), including prohibited categories and image compliance.
+- Batch mode now states the human-in-the-loop requirement explicitly (no auto-generated or auto-published listings).
+- Portable edition mirrored: Law 6, gate, image rules, disclosure templates, audit checklist, policy URLs, quick-reference rows.
+- `sync_etsy_policy.py` playbook list includes `ai-image-compliance.md`.
+
+### Fixed
+- Removed the unsafe default that omitted AI disclosure whenever the user didn't mention AI. Unknown status now produces a conditional disclosure reminder instead of a silent pass.
+- Removed stale "Lifestyle mockup" hero guidance that conflicted with the unedited-photo requirement.
+- Replaced the stale creativity-standards help-centre link with the live policy page.
+
+---
+
 ## [2.1.2] — October 2026
 
 **Sync & consistency release: repo-wide audit fixes, install-path correction, Etsy April 2026 title guidance, and CI hardening. State schema remains 2.0.**

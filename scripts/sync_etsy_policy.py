@@ -58,7 +58,8 @@ DIR_SELLER = REPO_SELLER / 'skill' / 'references' if REPO_SELLER else None
 
 FILES_TO_SYNC = ['listing-guide.md', 'seo-guide.md', 'policies.md']
 PLAYBOOKS = [
-    'ab-testing.md', 'action-layer-pointers.md', 'conversion-floor.md',
+    'ab-testing.md', 'action-layer-pointers.md', 'ai-image-compliance.md',
+    'conversion-floor.md',
     'listing-health-score.md', 'platform-fit-check.md', 'price-positioning.md',
     'regional-handling.md', 'search-intent-classification.md',
     'trademark-stoplist.md', 'video-brief.md'

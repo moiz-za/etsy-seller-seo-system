@@ -115,8 +115,10 @@ PROPS / SETUP NEEDED:
 2. **Designed for sound-off.** Always include text overlays for key information. Sound is a bonus, not a requirement.
 3. **No Etsy logo, no "Buy Now" calls.** Etsy strips/penalizes overt platform CTAs.
 4. **Lifestyle > product-on-white.** Same rule as hero images.
-5. **Show the finished result for digital products.** Don't just show the SVG file. Show the t-shirt the SVG made.
-6. **Refresh video every 6 months.** Stale video is a CTR drag. Even minor re-edits with new overlay text refresh the algorithm signal.
+5. **Show the finished result for digital products.** Don't just show the SVG file. Show the t-shirt the SVG made. For patterns, recipes, and seeds, the finished result shown must be real — an AI-generated or simulated result may not be the only result shown.
+6. **Keep the item truthful.** Do not edit colour, texture, condition, scale, or flaws. A video that over-promises breaks buyer trust and can trigger a materially-different case.
+7. **Use real people.** Prefer a real model, the seller, or the seller's hands. If an AI-generated synthetic performer is used, add a California SB 1050 disclosure (effective 1 Jan 2027) and flag it in the output.
+8. **Refresh video every 6 months.** Stale video is a CTR drag. Even minor re-edits with new overlay text refresh the algorithm signal.
 
 ---
 

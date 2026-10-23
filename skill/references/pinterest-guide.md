@@ -224,6 +224,13 @@ IMAGE BRIEF:
 - **Text overlay:** reinforces keyword to algorithm AND grabs attention in feed. Use the primary keyword or the most clickable benefit phrase.
 - **Alt text:** must include the primary keyword (this is part of the indexing spread check — see SKILL.md Phase 7). The pin's alt text should be the same as or closely match the hero image alt text on the Etsy listing for compound SEO.
 
+**Honesty rules (same standard as Etsy listing images — 22 Oct 2026)**
+- Never present an AI-generated or simulated result as a real finished project. For patterns, recipes, and seeds, the pin must reflect a real result made with the product.
+- POD: use only licensed stock mockups; keep print placement, scale, and colour accurate.
+- Do not alter the product's colour, texture, condition, or scale to make it look better.
+- Avoid AI-generated synthetic human models. If one is used, add a California SB 1050 disclosure (effective 1 Jan 2027).
+- If a pin image was AI-edited, note it in the pin description.
+
 ---
 
 ## 8. Fresh Pins Strategy

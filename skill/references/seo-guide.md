@@ -127,13 +127,15 @@ After indexing, every new listing gets a temporary visibility window of typicall
 - During the recency boost, even a poorly optimized listing gets some impressions. If CTR is weak during this window, the listing collapses fast when the boost ends.
 
 ### Pre-publish checklist
-- Hero mockup ready (lifestyle, not product-on-white)
+- Hero image ready — real, accurate, and compliant (lifestyle framing, not product-on-white)
+- Required unedited real photo present (physical / custom / pattern-recipe-seed) or file preview included (digital)
 - Primary keyword in first 40 chars of title
 - All 13 tags verified ≤20 chars, evidence-traced, phrase-coherent
 - All attributes filled — values match buyer search language
 - Primary keyword in first 40 chars of description
 - Primary keyword in hero image alt text
-- AI disclosure included (if applicable)
+- AI disclosure present if the item was created with AI
+- AI & image gate result is PASS or ACTION REQUIRED with items listed
 - Video uploaded
 - Indexing spread check passes all 5 surfaces
 
@@ -216,7 +218,7 @@ When a listing gets zero or near-zero impressions, the cause is one of these —
 3. **Indexing spread failure.** Primary keyword only appears in title; absent from tags / attributes / description / alt text. Apply §4.
 4. **Wrong category.** Etsy demotes listings that don't match their declared category. Re-pick the most specific subcategory.
 5. **Indexing wait period not yet passed.** If listing is under 72 hours old, this is normal. Wait.
-6. **IP/policy shadow-suppression.** If the listing contains trademarked terms, brand names, celebrity names, or anything from a takedown — Etsy may suppress it without notification. Audit fields.
+6. **IP/policy shadow-suppression.** If the listing contains trademarked terms, brand names, celebrity names, AI-generated functional instructions, an AI prompt bundle, or misleading imagery, Etsy may remove or suppress it without notification. Audit fields and images. See `policies.md §7`.
 7. **Listing in a Very High difficulty pool with no long-tail.** Primary keyword has 200,000+ competing listings. Re-pick a Low-Medium/Medium primary with a recipient/occasion/style modifier.
 
 Run these in order. Don't skip steps. Most "SEO is broken" cases turn out to be #1 or #2.

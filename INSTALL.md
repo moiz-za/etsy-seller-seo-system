@@ -162,6 +162,8 @@ When a new release of `etsy-seller-seo-system` comes out:
 2. Your `~/etsy-listings/` state is preserved automatically
 3. Check `CHANGELOG.md` for any schema version bumps — rare, but if schema changes you may need to migrate state files
 
+**Upgrading to 2.2.0 (Etsy AI & image policy):** no state migration is needed. The new `AI & image compliance` block is optional and is written the next time the skill touches each listing. Re-copy `skill/` and `state-templates/` (or reinstall the `.skill`) to pick up the new Law 6 gate.
+
 **Other tool users:**
 1. Re-upload `portable/Etsy_Listing_System_Instructions.md` to your GPT/Space/Gem
 2. Your saved session-state snapshots stay valid (we maintain backwards compatibility within a major version)

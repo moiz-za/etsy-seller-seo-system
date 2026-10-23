@@ -90,6 +90,7 @@ This isn't an SEO problem. Rewriting tags won't help. What's broken:
    - Photo 4: Lifestyle mockup of finished result
    - Photo 5: What's Included infographic (digital) or scale reference (physical)
    - Photo 6+: Compatibility / variants / seasonal applications
+   - Compliance: at least one real unedited photo of the actual item (physical / custom / pattern-recipe-seed) or a preview of the files (digital). Never make an AI-generated result the only evidence of the finished product.
 
 2. DESCRIPTION VS PHOTOS MISMATCH
    Buyers compare your description against what they see. If photos show 20 designs 

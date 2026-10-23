@@ -6,7 +6,7 @@
 3. [Attributes — Keyword Real Estate](#3-attributes--keyword-real-estate)
 4. [Description Rules](#4-description-rules)
 5. [Category Selection](#5-category-selection)
-6. [Photos, Video & Image Alt Text](#6-photos-video--image-alt-text)
+6. [Photos, Video & Image Compliance](#6-photos-video--image-compliance)
 7. [Delivery Setup](#7-delivery-setup)
 8. [Indexing Spread Check](#8-indexing-spread-check)
 9. [MODE 1 — Rewrite Process](#9-mode-1--rewrite-process)
@@ -295,10 +295,20 @@ What information the buyer needs to put in the order note.
 Be exact — vague instructions cause errors and bad reviews.
 Omit entirely if the product is not personalizable.
 
-**Block 8 — AI Disclosure (if applicable)**
-Only include if the user confirms the product was AI-assisted:
-`"This design was created with AI assistance and refined for quality."`
-Do NOT add this if the user did not mention AI use.
+**Block 8 — AI & Image Disclosure (conditional)**
+
+Three separate cases. Use only the one(s) that apply — never all three.
+
+1. **Item created with AI** (seller-prompted art or AI-assisted design) → **required**:
+   `Created with AI assistance using my own prompts and refined by me.`
+2. **Photos edited with AI** (lighting, background, crop) but the item is not AI-created → recommended:
+   `Some listing images were edited with AI tools for lighting and background; the item itself is shown accurately.`
+3. **Functional instructions** (pattern, recipe, plan, guide) → state authorship:
+   `This pattern was written and tested by me. The instructions were not generated with AI.`
+
+If AI status is **unknown**, do not add a claim and do not write "no AI" or "100% handmade". Print the conditional disclosure reminder defined in `SKILL.md` Phase 4G instead.
+
+Full rules and blocking conditions: `playbooks/ai-image-compliance.md`.
 
 **Block 9 — Closing**
 `Questions? Message [SHOPNAME] — we respond within 24 hours.`
@@ -340,32 +350,50 @@ Do not duplicate exact category phrases as standalone tags — categories alread
 
 ---
 
-## 6. Photos, Video & Image Alt Text
+## 6. Photos, Video & Image Compliance
+
+**Policy baseline: 22 Oct 2026.** Rules below reflect Etsy's Listing Image Requirements. Full gate: `playbooks/ai-image-compliance.md` · policy summary: `policies.md §7`.
 
 | Spec | Value |
 |---|---|
 | Maximum photos | 20 per listing (increased August 2025) |
 | Minimum resolution | 2000px on shortest side |
 | Recommended | 2000×2000px or 2000×1600px (5:4 ratio) |
-| Hero shot | Lifestyle mockup — show product IN USE or finished result |
 | Video | 5–15 seconds, autoplays on mobile — strong conversion signal |
 | Hero image filename | Include primary keyword: `funny-cat-mom-svg-bundle-hero.jpg` |
 | Hero image alt text | 100–150 chars including primary keyword |
 
-**Photo strategy — adapt to product type:**
+### Non-negotiable compliance rule
 
-| Slot | Digital Products | Physical Products |
-|---|---|---|
-| 1 | Lifestyle mockup of finished result (shirt, mug, wall art) | Product in natural lifestyle context |
-| 2 | All designs in the bundle displayed clearly | Second angle / lifestyle shot |
-| 3 | Close-up of best individual design | Detail / texture close-up |
-| 4 | Second lifestyle mockup (different product application) | Scale reference |
-| 5 | What's included infographic (formats, count, compatibility) | All variations together |
-| 6+ | Compatibility graphic, additional mockups, seasonal variants | Packaging, additional angles |
+| Product type | Required evidence in the photo set |
+|---|---|
+| Physical handmade | ≥1 **real, unedited** photo of the actual item against a real background. First image must be original photo/video of the final product |
+| Personalised / customised | Real photos of finished items; first image shows a **finished customised item** — never a blank or "Your Text Here" placeholder |
+| Print-on-demand | Licensed stock mockups allowed; must preserve real print placement, scale, and colour |
+| Digital design files (SVG, clipart, printables, templates) | ≥1 **preview or excerpt of the actual files** buyers receive (design grid, page preview, layer view) |
+| Digital audio / no visuals | Representative imagery allowed, including AI, if it doesn't mislead |
+| Patterns, recipes, seeds | ≥1 **real, unedited photo of something made using the product**; AI images cannot be the only finished-result images |
 
-**Key rule for digital products:** Never show just the file — show what the buyer will MAKE with it.
+**Editing rules:** the required real photo must not be edited with AI or photo software. Other slots may be AI-edited for lighting, colour, crop, or background — as long as the item still looks exactly like what ships. Never change colour, texture, condition, scale, or remove flaws. If you AI-edited any photo, note it in the description.
 
-**Image alt text rule (NEW):** the hero image alt text is part of the indexing spread check. It must contain the primary keyword phrase, describe the image accurately, and read naturally. Example: `Funny cat mom SVG design displayed on a white t-shirt, perfect Cricut craft project for pet lovers.`
+### Editorial photo plan by product type
+
+| Slot | Digital design files | Physical / handmade | Patterns, recipes, seeds |
+|---|---|---|---|
+| 1 | Lifestyle mockup of finished result (shirt, mug, wall art) | **Real, unedited photo** of the actual item | **Real, unedited photo** of a finished result |
+| 2 | **Preview of the actual files** — all designs, page preview, or layer view (required) | Second real angle | Second real finished result |
+| 3 | Close-up of best individual design | Detail / texture close-up (real) | Close-up of detail (stitches, texture, ingredients) |
+| 4 | Second lifestyle mockup (different application) | Scale reference | Process shot (in progress) |
+| 5 | What's included infographic (formats, count, compatibility) | All variations together | What's included + how to use |
+| 6+ | Compatibility graphic, seasonal variants | Packaging, additional angles | Packaging, seasonal variants |
+
+**Key rule for digital products:** never show only the raw file — show what the buyer will MAKE with it. But the photo set must still include a real preview of the files themselves.
+
+**POD / mockup rule:** if the design is printed by a production partner, a licensed stock mockup is allowed. Do not use an unlicensed template mockup, and do not alter the print's scale or placement.
+
+**Model imagery:** prefer a real person, the seller's own hands, or a non-human scene. If a brief calls for an AI-generated synthetic performer, add a California SB 1050 disclosure (effective 1 Jan 2027) and flag it in the output.
+
+**Image alt text rule:** the hero image alt text is part of the indexing spread check. It must contain the primary keyword phrase, describe the image accurately, and read naturally. Example: `Funny cat mom SVG design displayed on a white t-shirt, perfect Cricut craft project for pet lovers.`
 
 **Pinterest Marketing Block Rule:** Pin title (≤100 chars), Board name (25–40 chars), Board description (150–300 chars), Pin description (220–232 chars, no hashtags). *Count and Adjust Instruction:* Write naturally first, then count characters and explicitly expand or trim to land within the 220–232 character target range before finalizing.
 
@@ -424,7 +452,8 @@ Before running Phase 4 keyword research, read the existing description and extra
 - Product type and niche
 - File formats actually included
 - Commercial use status
-- AI disclosure presence (flag if missing where applicable)
+- AI status: created with AI / AI-edited photos only / no AI stated / unknown
+- Image evidence already present (real unedited photo, content preview, licensed mockup)
 - Delivery method
 - Target market signals
 
@@ -439,6 +468,7 @@ Title issues:        [word count / keyword not in first 40 chars / prohibited te
 Tag issues:          [tags over 20 chars: list them | exact 2+ word phrases repeated | empty slots | tags with no evidence backing]
 Description issues:  [keyword not in first 40 chars / missing sections / stuffing / wrong formats listed]
 Attribute issues:    [missing attributes | values don't match buyer language]
+AI & image issues:   [prompt bundle / AI-authored instructions / undisclosed AI creation / no unedited photo / preview missing / compliant]
 Diagnosis:           [SEO problem / CTR problem / conversion problem / combination]
 Scope of this fix:   [what the rewrite will and will not address — see below]
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
@@ -447,8 +477,8 @@ Scope of this fix:   [what the rewrite will and will not address — see below]
 ### Step 3.5 — Scope honesty before rewriting
 
 If the diagnosis is purely CTR or conversion (impressions exist but clicks/sales don't), tell the user plainly that rewriting title/tags/description will not fix the problem. The fix is:
-- **CTR problem:** stronger hero mockup, clearer product offer in first photo, more competitive price, less clutter in title.
-- **Conversion problem:** more detailed mockups, more lifestyle photos, better description specificity, more/better reviews, price-vs-perceived-value alignment.
+- **CTR problem:** stronger real-photo hero (compliant, unedited for physical), clearer product offer in first photo, more competitive price, less clutter in title.
+- **Conversion problem:** more detailed real photos / compliant mockups, more lifestyle shots, better description specificity, more/better reviews, price-vs-perceived-value alignment.
 
 Offer to still do the SEO rewrite if useful, but flag expected marginal impact. Get user confirmation before proceeding.
 

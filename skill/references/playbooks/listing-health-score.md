@@ -15,7 +15,7 @@
 | Coherence | 15 | Does the listing read like a real product |
 | CTR estimate | 15 | Hero-image / title-clarity / price signaling |
 | Conversion estimate | 15 | Description / mockup quality / reviews / price |
-| Compliance | 10 | IP, prohibited content, accurate claims |
+| Compliance | 10 | IP, AI & image policy, prohibited content, accurate claims |
 | **Total** | **100** | |
 
 ---
@@ -95,12 +95,14 @@ If no stats:
 
 | Check | Points |
 |---|---|
-| No trademarked / brand / celebrity names anywhere | 4 |
-| AI disclosure present if AI was used | 2 |
-| Commercial use claim is backed by actual license | 2 |
-| All claimed file formats are actually in the product | 2 |
+| No trademarked / brand / celebrity names anywhere | 2 |
+| AI disclosure present if the item was created with AI | 2 |
+| No prohibited AI category (bot-generated listing / AI-authored instructions / prompt bundle) | 2 |
+| Image plan compliant for the product type (unedited real photo / file preview / licensed mockup) | 2 |
+| Commercial use claim is backed by actual license | 1 |
+| All claimed file formats are actually in the product | 1 |
 
-Any compliance fail = listing is at risk of removal regardless of SEO. A listing with a 0/10 here should be paused, not optimized.
+Any compliance fail = listing is at risk of removal regardless of SEO. A listing with a 0/10 here should be paused, not optimized. Image/AI failures follow `playbooks/ai-image-compliance.md`.
 
 ---
 
