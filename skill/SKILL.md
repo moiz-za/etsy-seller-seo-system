@@ -6,7 +6,7 @@ description: >
 
 # Etsy Seller — SEO Optimization System
 
-**Schema version:** 2.0 · **Policy version:** 2026 (rev. 22 Oct 2026 — AI & image compliance) · **Features:** System Laws & Caveman Output Protocol
+**Schema version:** 2.0 · **Policy version:** 2026 (rev. 23 Oct 2026 — AI, image & seller operations) · **Features:** System Laws & Caveman Output Protocol
 
 ---
 
@@ -80,7 +80,7 @@ Run these searches in parallel before producing any output:
 "Etsy AI policy update [current year]"
 "Etsy listing image requirements update [current year]"
 ```
-If results newer than **22 October 2026** surface meaningful changes, flag them to the user and override stored knowledge. Pay particular attention to AI-use, listing-image, and functional-instructions rules — these change fastest and carry removal risk.
+If results newer than **23 October 2026** surface meaningful changes, flag them to the user and override stored knowledge. Pay particular attention to AI-use, listing-image, functional-instructions, and seller-operations rules — these change fastest and carry removal risk.
 
 ### Phase 3 — Detect action + extract input
 

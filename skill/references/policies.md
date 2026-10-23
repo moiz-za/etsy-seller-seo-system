@@ -2,7 +2,7 @@
 
 This file is universal — it applies to ANY shop, ANY niche, ANY product type (digital, physical, handmade, vintage). Nothing is hardcoded.
 
-**Policy baseline: 22 October 2026.**
+**Policy baseline: 23 October 2026.**
 
 **Live verification:** for any policy interpretation, fetch the relevant page from Etsy directly before relying on stored knowledge:
 - Seller policies index: https://www.etsy.com/legal/sellers/
@@ -10,6 +10,12 @@ This file is universal — it applies to ANY shop, ANY niche, ANY product type (
 - Listing image requirements: https://www.etsy.com/legal/policy/listing-image-requirements/253962679005
 - Etsy's stance on AI creations: https://www.etsy.com/seller-handbook/article/1275449912004
 - AI updates announcement (22 Oct 2026): https://www.etsy.com/seller-handbook/article/1522733284810
+- Shop finances & payouts (8 Sep 2026): https://www.etsy.com/seller-handbook/article/1502565963692
+- Policy violations & appeals (23 Jul 2026): https://www.etsy.com/seller-handbook/article/1402820802974
+- Global tariffs & DDP (9 Jun 2026): https://www.etsy.com/seller-handbook/article/1355662653395
+- Purchase Protection (7 Apr 2026): https://www.etsy.com/seller-handbook/article/1085799204521
+- Review rating calculation (10 Mar 2026): https://www.etsy.com/seller-handbook/article/1471073427393
+- EU packaging & EPR (3 Sep 2026): https://www.etsy.com/seller-handbook/article/1511440488235
 - Prohibited items: https://www.etsy.com/legal/prohibited
 - Intellectual property: https://www.etsy.com/legal/ip
 - Returns & refunds: https://help.etsy.com/hc/en-us/articles/115013328267
@@ -96,6 +102,11 @@ Tools, materials, and ingredients used to create or assemble items.
 - Free shipping improves conversion and search ranking
 - Upload tracking on all orders; required for orders ≥ $250 (US)
 
+### EU Packaging & EPR (PPWR — Effective 12 August 2026)
+- Sellers of packaged goods to EU buyers may qualify as "producers" under the Packaging and Packaging Waste Regulation and national Extended Producer Responsibility laws.
+- Possible obligations: register with each EU country's producer register, submit EPR registration numbers in Shop Manager (Etsy currently collects France, Germany, and Spain), appoint an EU Authorised Representative where not established, report packaging quantities, join a compliance scheme, and pay EPR fees.
+- Rules vary by country and some details are still being finalised. Verify with a qualified legal or compliance professional.
+
 ### Production Partner Disclosure
 - If anyone other than the seller (or seller's listed employees) physically makes the item, that party is a Production Partner
 - Production Partners must be added in shop settings AND disclosed in the listing
@@ -158,6 +169,14 @@ Policy updated April 2, 2026. Enforcement begins August 11, 2026.
 3. Repeat strikes → permanent shop closure
 4. Counter-notice process available if claim is wrong — file within 10 business days
 5. For high-stakes disputes: consult an IP attorney before responding
+
+### Policy Violations Page & Appeals (July 2026)
+- **Shop Manager → Policy violations** is the single place to see every removed listing, the policy cited, and the resources for staying compliant.
+- Notifications about removals also appear in Shop Manager.
+- **Appeals** now cover most policies and are expanding to all sellers by the end of 2026. Human agents review every appeal.
+- Most appeal reviews finish within ~3 days but can take 10–12 days.
+- **Appeal instead of relisting.** Relisting the same item can trigger another violation and another listing fee.
+- AI and image-policy removals use the same appeal route.
 
 ### Research Tools Before Listing
 - US trademarks: https://www.uspto.gov/trademarks

@@ -4,9 +4,9 @@ A free, evidence-driven **Etsy SEO tool** for AI assistants. It optimizes Etsy l
 
 **Quick start:** paste [`portable/Etsy_Listing_System_Instructions.md`](./portable/Etsy_Listing_System_Instructions.md) into any AI chat as your first message, then send your listing. Installing the Claude skill takes three commands — see [Installation](#installation).
 
-[![Version](https://img.shields.io/badge/version-2.2.0-blue?style=flat-square)](CHANGELOG.md)
+[![Version](https://img.shields.io/badge/version-2.2.1-blue?style=flat-square)](CHANGELOG.md)
 [![License](https://img.shields.io/badge/license-MIT-green?style=flat-square)](LICENSE)
-[![Etsy policy](https://img.shields.io/badge/Etsy_policy-22_Oct_2026-green?style=flat-square)](skill/references/policies.md)
+[![Etsy policy](https://img.shields.io/badge/Etsy_policy-23_Oct_2026-green?style=flat-square)](skill/references/policies.md)
 [![Stars](https://img.shields.io/github/stars/moiz-za/etsy-seller-seo-system?style=flat-square&label=stars)](https://github.com/moiz-za/etsy-seller-seo-system/stargazers)
 [![Forks](https://img.shields.io/github/forks/moiz-za/etsy-seller-seo-system?style=flat-square&label=forks)](https://github.com/moiz-za/etsy-seller-seo-system/forks)
 [![PRs](https://img.shields.io/badge/PRs-welcome-brightgreen?style=flat-square)](CONTRIBUTING.md)
@@ -395,6 +395,7 @@ git config core.hooksPath .githooks
 
 | Version | Date | Summary |
 |---------|------|---------|
+| **2.2.1** | October 2026 | 2026 operations sweep: Payment account/payouts, Purchase Protection, tariffs & DDP, EU PPWR/EPR, policy-violations appeals, review-rating calc |
 | **2.2.0** | October 2026 | Etsy AI & image policy (22 Oct 2026): new Law 6 gate, unedited-photo rules, AI disclosure, prohibited AI categories, public policy section |
 | 2.1.2 | October 2026 | Sync & consistency: install-path fix, April 2026 title guidance, CI hardening, rule sync |
 | 2.1.1 | September 2026 | Archive fix, maintainer-script path sanitization, SellWren links, leak guard |

@@ -1,4 +1,4 @@
-# Operations Guide — May 2026
+# Operations Guide — October 2026
 
 This file is universal — it applies to ANY shop, ANY product type. Nothing is hardcoded to a specific shop or product format.
 
@@ -31,6 +31,31 @@ This file is universal — it applies to ANY shop, ANY product type. Nothing is 
 
 **ChatGPT Instant Checkout eligibility:** only sellers enrolled in Offsite Ads have listings eligible for ChatGPT Instant Checkout discovery. Opting out of Offsite Ads (only possible under $10K/yr) means losing that channel.
 
+### Payouts & Payment Account (September 2026)
+
+Etsy's Payment account now shows the balance in three parts:
+
+| Figure | Meaning |
+|---|---|
+| **Current** | Funds available now, or already applied to fees, refunds, or billing |
+| **Pending** | Funds still processing or held in reserve |
+| **Total** | Current + Pending |
+
+- **Ready for Deposit** separates *payout timing* (when funds become available) from *deposit health* (whether the account can receive a deposit). It surfaces every blocker at once, not one at a time.
+- **Reserves** are now part of the Pending balance. The standalone reserve module and the reserve minimum are retired. A side panel shows release timing and the re-evaluation date.
+- **Current balance can be negative** when refunds or real-time fees (Etsy Ads, postage labels) exceed available earnings. It corrects as Pending funds become Current.
+- **Fee timing:** sale-related fees (payment processing, transaction) stay Pending until that sale's earnings become available. Non-sale fees (Etsy Ads, postage, listing, subscription) deduct in real time.
+- Transaction history is moving to Total / Current / Pending tabs with expandable per-sale fee details.
+
+### International Orders & US Tariffs (June 2026)
+
+- **US de minimis ended 29 August 2025** — more US-bound shipments are now dutiable.
+- **From 9 July 2026, Delivered Duty Paid (DDP) is required** for orders to US buyers to qualify for Etsy Purchase Protection. Use a carrier that lets you prepay duties, taxes, and import fees (UPS, FedEx, Royal Mail DDP from the UK, etc.).
+- Duties and import fees must be **included upfront in the price** for US orders. Set US-specific prices so other markets stay competitive and postage stays low.
+- Etsy's US tariff estimator (powered by Zonos) estimates duties and HS codes when creating or editing a listing — it is a guideline, not a guarantee.
+- Keep delivery receipts. Refunds of IEEPA-era tariffs are handled through the carrier or US CBP, not automatically by Etsy.
+- In listings, state that prices include duties/tariffs/fees to set buyer expectations.
+
 ---
 
 ## 2. Shop Setup — Universal
@@ -54,6 +79,7 @@ This file is universal — it applies to ANY shop, ANY product type. Nothing is 
 - EU sellers: VAT applies. Marketplace VAT collection rules differ for B2C vs B2B and by country.
 - UK sellers: VAT registration threshold £90,000/yr (2026). Below that, optional but cannot reclaim input VAT.
 - Etsy automatically collects VAT on digital goods sold to EU consumers under the EU's VAT on digital services rules — sellers don't need separate registration for VAT-MOSS in most cases.
+- **EU packaging & EPR (PPWR, effective 12 August 2026):** if you sell packaged goods to EU buyers as a business, you may need to register with the national producer register in each EU country you sell to, provide EPR registration numbers in Shop Manager (Etsy currently collects France, Germany, and Spain), appoint an EU Authorised Representative where you are not established, report packaging quantities, and join a compliance scheme (paying EPR fees). Rules vary by country and are still being finalised — verify with a qualified professional.
 - Income tax: 1099-K (US) issued at $5,000+ in 2026 (lowered threshold), or earlier in some states.
 
 ---
@@ -84,7 +110,9 @@ This file is universal — it applies to ANY shop, ANY product type. Nothing is 
 - All lifetime reviews count — not just last 12 months
 - Newer reviews carry more weight than older ones
 - Each review's impact is **halved every year** it ages
+- Rating, review text, and total review count now share the same lifetime timeframe
 - Star Seller eligibility still uses last 3 months only — unchanged
+- Source: Etsy Seller Handbook, 10 March 2026
 
 ### What This Means
 - Consistent recent excellence steadily improves your score
@@ -100,12 +128,12 @@ This file is universal — it applies to ANY shop, ANY product type. Nothing is 
 
 ---
 
-## 5. Cases & Disputes — Updated March 24, 2026
+## 5. Cases & Disputes — Updated April 2026
 
-### Case Filing Threshold (Changed)
-- **Old rule:** Buyers could file a case 1 day after estimated delivery
-- **New rule:** Buyers must wait **7+ days past estimated delivery** for late delivery cases
-- Buyer must contact seller via "Help with Order" before any case can be opened
+### Case Filing Threshold
+- **Late delivery:** an order counts as late when it arrives **7+ days after the estimated delivery date**
+- **Case window:** buyers can open a case for up to **30 days after eligibility begins** (April 2026 change)
+- Buyer must contact the seller via "Help with Order" before any case can be opened
 - Open cases directly hurt search ranking — resolve quickly
 
 ### For Digital Downloads
@@ -125,7 +153,28 @@ This file is universal — it applies to ANY shop, ANY product type. Nothing is 
 
 ---
 
-## 6. Prohibited Seller Behaviors
+## 6. Etsy Purchase Protection — Updated 7 May 2026
+
+Covers eligible orders when something goes wrong outside the seller's control (not delivered, arrives damaged despite secure packaging).
+
+**Coverage:** up to **$250 USD per order**, including postage and taxes collected on Etsy. Since May 2026 the cap applies even when the order total exceeds $250 — for example, Etsy covers $250 of a $400 refund.
+
+**Eligibility:**
+- Meet Etsy's minimum customer service standards: message response rate, on-time dispatch + tracking, average review rating, and case rate
+- Respond to "Help with Order" messages within **48 hours** (auto-replies that acknowledge the message can count)
+- Dispatch on time, mark the order dispatched, and upload valid tracking or use an Etsy postage label where available
+- Item matches the listing description; shop in good standing
+
+**Timelines:**
+- Buyers can open a case up to **30 days** after eligibility begins
+- Late delivery = **7+ days** after the estimated delivery date (coverage may expand in peak season)
+- Complex and high-value cases receive human review; most reviews finish within ~3 days but can take 10–12 days
+
+**Practical:** Purchase Protection is not insurance. For orders above $250, consider carrier insurance — especially for expensive, bulky, or fragile items.
+
+---
+
+## 7. Prohibited Seller Behaviors
 
 | Behavior | Consequence |
 |---|---|
@@ -141,7 +190,7 @@ This file is universal — it applies to ANY shop, ANY product type. Nothing is 
 
 ---
 
-## 7. Metric Diagnostic — Which Number Is Hurting You?
+## 8. Metric Diagnostic — Which Number Is Hurting You?
 
 If sales are flat, identify which metric is the actual problem before changing anything. Use this lookup:
 
@@ -158,7 +207,7 @@ If sales are flat, identify which metric is the actual problem before changing a
 
 ---
 
-## 8. Shop Health Quick-Check (run monthly)
+## 9. Shop Health Quick-Check (run monthly)
 
 - [ ] Star Seller status: meeting thresholds in current window
 - [ ] Open cases: zero, or under 48 hours old
@@ -167,4 +216,4 @@ If sales are flat, identify which metric is the actual problem before changing a
 - [ ] Listings with views but no clicks: hero image audit
 - [ ] Listings with clicks but no sales: description + price audit
 - [ ] Shop announcement: updated for current processing time / season
-- [ ] All published listings pass §8 of policies.md audit checklist
+- [ ] All published listings pass §9 of policies.md audit checklist

@@ -4,6 +4,26 @@ All notable changes to the Etsy Seller System.
 
 Schema versions are bumped only when state file formats change in ways that require migration.
 
+## [2.2.1] — October 2026
+
+**2026 operations sweep — brings the guidance up to date beyond AI/image.** State schema remains 2.0.
+
+### Added
+- **Payment account & payouts (8 Sep 2026):** Current / Pending / Total balance model, Ready for Deposit, reserves folded into Pending, negative Current balances, and sale-vs-non-sale fee timing (`operations.md`).
+- **Etsy Purchase Protection (7 Apr 2026, effective 7 May):** $250 USD per eligible order including postage/tax, even above a $250 order total; eligibility standards; 48-hour Help with Order response; human review (`operations.md`).
+- **US tariffs & DDP (9 Jun 2026):** US de minimis ended 29 Aug 2025; DDP required for US orders from 9 Jul 2026 to qualify for Purchase Protection; duties up front and US-specific pricing (`operations.md`).
+- **EU packaging & EPR / PPWR (3 Sep 2026, effective 12 Aug 2026):** producer registration, EPR numbers in Shop Manager, Authorised Representative, packaging reporting, compliance-scheme fees (`policies.md §3`, `operations.md`).
+- **Policy violations page & appeals (23 Jul 2026):** removal history, appeal routes, timing, and "appeal instead of relisting" (`policies.md §5`).
+
+### Changed
+- **Cases:** buyer case window is now 30 days after eligibility begins; late delivery defined as 7+ days after the estimated delivery date (`operations.md`).
+- **Review rating:** clarified that rating, text, and count share the lifetime timeframe; Star Seller remains 3 months.
+- **Policy baseline** moved to 23 October 2026 in `policies.md`; README policy badge and `SKILL.md` policy version updated.
+- **Portable edition v2.2.1:** new operations summary, source URLs, and quick-reference rows.
+- Source URLs for all six updates added to the portable edition.
+
+---
+
 ## [2.2.0] — October 2026
 
 **Policy-breaking release: Etsy's 22 October 2026 AI and listing-image rules.** State schema remains 2.0 (new fields are optional; no migration).

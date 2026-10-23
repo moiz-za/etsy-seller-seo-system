@@ -352,7 +352,7 @@ Do not duplicate exact category phrases as standalone tags — categories alread
 
 ## 6. Photos, Video & Image Compliance
 
-**Policy baseline: 22 Oct 2026.** Rules below reflect Etsy's Listing Image Requirements. Full gate: `playbooks/ai-image-compliance.md` · policy summary: `policies.md §7`.
+**Image policy verified: 22 Oct 2026.** Rules below reflect Etsy's Listing Image Requirements. Full gate: `playbooks/ai-image-compliance.md` · policy summary: `policies.md §7`.
 
 | Spec | Value |
 |---|---|

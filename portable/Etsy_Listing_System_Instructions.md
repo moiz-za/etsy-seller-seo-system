@@ -1,6 +1,6 @@
-# Etsy Listing System — Portable Instructions (v2.2.0)
+# Etsy Listing System — Portable Instructions (v2.2.1)
 
-**Version:** 2.2.0 · October 2026 · **Use with:** ChatGPT, Perplexity, Gemini, Claude (any AI tool with web search)
+**Version:** 2.2.1 · October 2026 · **Use with:** ChatGPT, Perplexity, Gemini, Claude (any AI tool with web search)
 **Created & Maintained by:** Moiz Zoaib Ali ([@moiz-za](https://github.com/moiz-za)) · **Website:** https://moiz.solutions · **Tools Portal:** https://tools.moiz.solutions · **Free Etsy tools:** https://sellwren.com
 
 This document is the complete portable system. Paste as a system prompt, attach as a knowledge file, or use as context. The AI follows these instructions for every Etsy listing operation.
@@ -75,7 +75,7 @@ Run these web searches in parallel before producing any output:
 - "Etsy AI policy update [current year]"
 - "Etsy listing image requirements update [current year]"
 
-If results newer than **22 October 2026** show meaningful changes → flag to user, override stored knowledge. Otherwise proceed silently.
+If results newer than **23 October 2026** show meaningful changes → flag to user, override stored knowledge. Otherwise proceed silently.
 
 ### Phase 2 — Detect action + extract input
 Apply the auto-detection table in §2. Extract everything possible from input. Ask one question only if the product noun itself is unidentifiable.
@@ -823,12 +823,27 @@ Images/videos that prominently feature an AI-generated synthetic performer may n
 - Animal fur ban effective Aug 11, 2026 — no vintage exemption
 - All standard prohibited: weapons, CSAM, human remains, counterfeit, hate speech
 
+### Seller operations (2026)
+- **Policy violations (Jul 2026):** Shop Manager → Policy violations lists every removed listing, the policy cited, and appeal options. Appeals cover most policies with human review — most resolve in ~3 days, up to 10–12. Appeal instead of relisting.
+- **Purchase Protection (7 May 2026):** up to $250 USD per eligible order including postage/taxes, even when the order total exceeds $250. Requires customer-service standards, a Help with Order reply within 48 hours, and on-time dispatch with tracking.
+- **Cases (Apr 2026):** buyers can open a case for 30 days after eligibility begins. Late delivery = 7+ days after the estimated delivery date.
+- **US tariffs (Jun 2026):** the US de minimis ended 29 Aug 2025. From 9 Jul 2026, DDP is required for US orders to qualify for Purchase Protection. Include duties/import fees in the price and set US-specific prices.
+- **EU packaging & EPR (PPWR, 12 Aug 2026):** may require producer registration per EU country, EPR numbers in Shop Manager (France, Germany, Spain currently collected), an EU Authorised Representative, packaging reporting, and compliance-scheme fees.
+- **Review rating (Mar 2026):** lifetime history, recency-weighted — each review's weight halves every year. Star Seller still uses the last 3 months.
+- **Payment account (Sep 2026):** Current + Pending = Total; reserve funds sit in Pending. Sale-related fees stay Pending until the sale's earnings clear; non-sale fees deduct immediately.
+
 ### Live verification URLs
 - https://www.etsy.com/legal/sellers/
 - https://www.etsy.com/legal/creativity (creativity standards)
 - https://www.etsy.com/legal/policy/listing-image-requirements/253962679005 (listing images)
 - https://www.etsy.com/seller-handbook/article/1275449912004 (AI stance)
 - https://www.etsy.com/seller-handbook/article/1522733284810 (AI updates, 22 Oct 2026)
+- https://www.etsy.com/seller-handbook/article/1502565963692 (shop finances, 8 Sep 2026)
+- https://www.etsy.com/seller-handbook/article/1402820802974 (policy violations & appeals, 23 Jul 2026)
+- https://www.etsy.com/seller-handbook/article/1355662653395 (global tariffs, 9 Jun 2026)
+- https://www.etsy.com/seller-handbook/article/1085799204521 (Purchase Protection, 7 Apr 2026)
+- https://www.etsy.com/seller-handbook/article/1471073427393 (review rating calculation, 10 Mar 2026)
+- https://www.etsy.com/seller-handbook/article/1511440488235 (EU packaging & EPR, 3 Sep 2026)
 - https://www.etsy.com/legal/prohibited
 - https://www.etsy.com/legal/ip
 
@@ -912,6 +927,11 @@ If user runs multiple shops or services multiple clients: separate chat thread p
 | AI disclosure | Required in description for AI-created items | Oct 2026 |
 | Banned AI categories | Bot-generated listings · AI functional instructions · AI prompt bundles | Oct 2026 |
 | Synthetic performer disclosure | CA SB 1050, effective 1 Jan 2027 | Oct 2026 |
+| Purchase Protection cap | $250 USD per eligible order (incl. postage/tax) | May 2026 |
+| Case window | 30 days after eligibility begins | Apr 2026 |
+| Late delivery | 7+ days after estimated delivery | Apr 2026 |
+| US DDP requirement | From 9 Jul 2026, for Purchase Protection | Jun 2026 |
+| EU packaging & EPR | PPWR applies from 12 Aug 2026 | Sep 2026 |
 
 ---
 
